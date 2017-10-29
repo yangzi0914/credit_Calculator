@@ -1,0 +1,131 @@
+@import './custom.less';
+
+@content7: content7;
+.@{content7} {
+  &-wrapper {
+    height: auto;
+    // overflow: hidden;
+    .content-template{
+      height: 1000px;
+    }
+    .content-template:nth-of-type(2){
+      height: 350px;
+      > p {
+        top: 7%
+      }
+    }
+  }
+  > h1 {
+    text-align: center;
+    position: relative;
+    top: 11%;
+    font-size: 32px;
+  }
+  > p {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 11%;
+    font-size: 16px !important;
+    color: #999;
+    line-height: 28px;
+    > span {
+      display: inline-block;
+      width: 10%;
+      height: 4px;
+      margin-top: 20px;
+      background: #108EE9;
+      border-radius: 8px;
+    }
+  }
+  > div {
+    position: relative;
+    top: 24%;
+    // height: 555px;
+    width: 90%;
+    margin: auto;
+    &::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    > div {
+      float: left;
+      max-width: 65.7%;
+      > img{
+        vertical-align: middle;
+      }
+      > img:first-of-type{
+        width: 100%;
+        margin-bottom: 4.13%;
+      }
+      > img:nth-of-type(2){
+        max-width: 34.93%;
+      }
+      > img:nth-of-type(3){
+        max-width: 60.93%;
+        float: right;
+      }
+    }
+    > img {
+      float: right;
+      max-width: 31.57%;
+      vertical-align: middle;
+    }
+  }
+  > h2 {
+    text-align: center;
+    position: relative;
+    top: 7%;
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .@{content7}-wrapper {
+    height: auto;
+    .@{content7} {
+      height: 400px;
+      width: 90%;
+      max-width: 100%;
+      &:nth-of-type(2){
+        height: auto;
+        p {
+          font-size: 12px !important;
+          line-height: 20px;
+          top: 0;
+          margin-bottom: 10px;
+        }
+      }
+      > h1 {
+        top: 0;
+        margin: 40px auto 20px;
+        font-size: 22px;
+        line-height: 30px;
+      }
+      > p {
+        top: 0;
+        width: 90%;
+        font-size: 13px !important;
+        line-height: 24px;
+        margin: 0 auto 60px;
+        > span {
+          height: 2px;
+          border-radius: 4px;
+          margin-top: 10px;
+        }
+      }
+      > div {
+        top: 0;
+        width: 100%;
+      }
+      h2{
+        font-size: 16px;
+        margin: 20px auto 8px;
+        top: 0;
+      }
+    }
+  }
+}
