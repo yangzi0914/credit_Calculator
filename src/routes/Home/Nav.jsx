@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
+import { Link } from 'dva/router';
 import logo from '../../assets/logo@2x.png';
 
 const Item = Menu.Item;
@@ -26,7 +27,7 @@ class Header extends React.Component {
     delete props.isMode;
     const navData = { menu1: '首页', menu2: '资讯', menu3: '公司介绍'};
     const navChildren = Object.keys(navData)
-      .map((key, i) => (<Item key={i}><a href="/IndexPage">{navData[key]}</a></Item>));
+      .map((key, i) => (<Item key={i}><Link to="/indexPage">{navData[key]}</Link></Item>));
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}
