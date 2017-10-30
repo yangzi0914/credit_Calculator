@@ -3745,7 +3745,7 @@ samp {
 #nav_0_0-menu .ant-menu-item-active,#nav_0_0-menu.ant-menu-horizontal > .ant-menu-item-selected { color: #fff; border-color: #fff }
 #nav_0_0-menu { color: rgba(255,255,255,0.8) }
 #nav_0_0 { background-color: rgba(0,0,0,0.3) }
-#content_0_0:before { background-image: url(/static/index_bg.2df49d89.png); position: relative }
+#content_0_0:before { background-image: url(./static/index_bg.2df49d89.png); position: relative }
 }
 @media screen and (max-width: 767px) {
 #nav_0_0-menu .header0-phone-nav-text { width: 50%; height: 20%; top: 52px; padding-top: 0px; background-color: 0px }
@@ -3991,7 +3991,7 @@ h4 {
   border-color: #666;
 }
 .banner0:before {
-  background-image: url(/static/index_bg.2df49d89.png);
+  background-image: url(./static/index_bg.2df49d89.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -4344,7 +4344,7 @@ h4 {
   }
 }
 .content2-wrapper {
-  background-image: url(/static/newMedia.38329b41.png);
+  background-image: url(./static/newMedia.38329b41.png);
   background-size: cover;
   background-position: center;
   height: 900px;
