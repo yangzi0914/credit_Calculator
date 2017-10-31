@@ -57,6 +57,7 @@ class Header extends React.Component {
         <div
           className={`${this.props.className}-phone-nav-text`}
         >
+          <span className='myIcon'></span>
           <Menu
             defaultSelectedKeys={['0']}
             mode="inline"

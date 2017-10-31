@@ -5,7 +5,7 @@
 #content_0_0:before { background-image: url(../../../assets/banner.png); position: relative }
 }
 @media screen and (max-width: 767px) {
-#nav_0_0-menu .header0-phone-nav-text { width: 50%; height: auto; top: 52px; padding-top: 0px; border-radius: 4px; overflow: hidden}
+#nav_0_0-menu .header0-phone-nav-text { width: 50%; height: auto; top: 64px; right: 15px; padding-top: 0px; border-radius: 4px;}
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item { height: 60px; line-height: 60px; background-color: #fff; font-size: 18px }
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item a {color: #757575;}
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item.ant-menu-item-selected,

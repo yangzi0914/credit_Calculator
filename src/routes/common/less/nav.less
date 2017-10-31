@@ -104,7 +104,6 @@
           transition-timing-function: @ease-out;
         }
       }
-
       &-text {
         position: fixed;
         top: 0;
@@ -115,9 +114,26 @@
         opacity: 0;
         transition: opacity .3s @ease-in;
         pointer-events: none;
-        background: #404040;
+        box-shadow: 0 7px 10px fade(#000, 15);
+        ul {
+          border-radius: 4px;
+          overflow: hidden;
+        }
         .ant-menu-item-selected {
           border: none;
+          font-weight: bold;
+        }
+        .myIcon {
+          position: absolute;
+          right: 10px;
+          top: -6px;
+          display: block;
+          width: 0;
+          height: 0;
+          border-width:0 6px 6px;
+          border-style: solid;
+          border-color: transparent transparent #fff; 
+          z-index: 999;
         }
       }
     }
