@@ -28,6 +28,17 @@ class Content extends React.Component {
           className={`content-template ${props.className}`}
           location={props.id}
         >
+          <TweenOne
+            key="img"
+            animation={animType.one}
+            className={`${props.className}-img`}
+            id={`${props.id}-imgWrapper`}
+            resetStyleBool
+          >
+            <span id={`${props.id}-img`}>
+              <img width="100%" src={public1} />
+            </span>
+          </TweenOne>
           <QueueAnim
             type={animType.queue}
             className={`${props.className}-text`}
@@ -43,17 +54,6 @@ class Content extends React.Component {
               自 2015 年创办爱滑冰公益课，由佟健及冰上中心教练员进行陆地及冰上授课，面向普通大众推广花样滑冰运动。
             </p>
           </QueueAnim>
-          <TweenOne
-            key="img"
-            animation={animType.one}
-            className={`${props.className}-img`}
-            id={`${props.id}-imgWrapper`}
-            resetStyleBool
-          >
-            <span id={`${props.id}-img`}>
-              <img width="100%" src={public1} />
-            </span>
-          </TweenOne>
         </OverPack>
       </div>
     );
