@@ -3,7 +3,6 @@
 @header: header0;
 .@{header} {
   height: 64px;
-  background: @template-nav-bg-color;
   width: 100%;
   z-index: 970;
   box-shadow: 0 5px 8px fade(#000, 15);
@@ -38,6 +37,7 @@
         float: left;
         text-align: center;
         width: 100px;
+        opacity: .5;
         & a{
           color: @template-text-color-light;
         }
@@ -46,6 +46,9 @@
     & .ant-menu-horizontal > .ant-menu-item-active {
       color: @link-hover-color;
       border-bottom-color: @link-hover-color;
+      a:hover{
+        color: #fff;
+      }
     }
   }
 }
