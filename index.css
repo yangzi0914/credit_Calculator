@@ -3742,9 +3742,8 @@ samp {
 }
 
 @media screen and (min-width: 768px) {
-#nav_0_0-menu .ant-menu-item-active,#nav_0_0-menu.ant-menu-horizontal > .ant-menu-item-selected { color: #fff; border-color: #fff }
-#nav_0_0-menu { color: rgba(255,255,255,0.8) }
-#nav_0_0 { background-color: rgba(0,0,0,0.3) }
+#nav_0_0-menu .ant-menu-item-active,#nav_0_0-menu.ant-menu-horizontal > .ant-menu-item-selected { color: #fff; border-color: #fff; opacity: 1;}
+#nav_0_0 { background-color: rgba(0,0,0,0.5) }
 #content_0_0:before { background-image: url(./static/banner.5b21f35e.png); position: relative }
 }
 @media screen and (max-width: 767px) {
@@ -3865,7 +3864,6 @@ h4 {
 }
 .header0 {
   height: 64px;
-  background: rgba(51, 51, 51, 0.95);
   width: 100%;
   z-index: 970;
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
@@ -3904,6 +3902,7 @@ h4 {
   float: left;
   text-align: center;
   width: 100px;
+  opacity: .5;
 }
 .header0-nav .ant-menu li a {
   color: #FFF;
@@ -3911,6 +3910,9 @@ h4 {
 .header0-nav .ant-menu-horizontal > .ant-menu-item-active {
   color: #34aff3;
   border-bottom-color: #34aff3;
+}
+.header0-nav .ant-menu-horizontal > .ant-menu-item-active a:hover {
+  color: #fff;
 }
 @media screen and (max-width: 767px) {
   .header0-logo {
