@@ -9,9 +9,11 @@
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item { height: 60px; line-height: 60px; background-color: #fff; font-size: 18px }
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item a {color: #757575;}
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item.ant-menu-item-selected,
-#nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item:hover { background-color: #DAEDFB; }
-#nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item.ant-menu-item-selected a,
-#nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item:hover a { color: #108EE9 }
-#nav_0_0 { background-color: rgba(0,0,0,0.3); height: 49px; position: fixed }
+#nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item:hover{ background-color: #DAEDFB; }
+#nav_0_0-menu .header0-phone-nav-text .ant-menu
+.ant-menu-item.ant-menu-item-selected a,
+#nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item:hover a,
+#nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item a:active { color: #108EE9 }
+#nav_0_0 { background-color: rgba(0,0,0,0.5); height: 49px; position: fixed }
 #nav_0_0-logo { line-height: 49px }
 }
