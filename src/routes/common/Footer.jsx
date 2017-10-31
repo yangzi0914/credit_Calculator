@@ -4,6 +4,7 @@ import QueueAnim from 'rc-queue-anim';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import weChat from '../../assets/weChat.png';
 import app from '../../assets/app.png';
+import sina from '../../assets/sina.png';
 import weChat_QR from '../../assets/weChat_QR.png';
 import app_QR from '../../assets/app_QR.png';
 import weChat_QR_phone from '../../assets/weChat_QR_phone.png';
@@ -56,7 +57,7 @@ class Footer extends React.Component {
             <img src={app_QR}/>
           </li>
           <li>
-            <a href="http://weibo.com/p/1006065665302995/home?from=page_100606&mod=TAB#place" target="_blank"><img src={weChat}/></a>
+            <a href="http://weibo.com/p/1006065665302995/home?from=page_100606&mod=TAB#place" target="_blank"><img src={sina}/></a>
           </li>
         </ul>)}
         <p key="p" id={`${props.id}-content`}>
