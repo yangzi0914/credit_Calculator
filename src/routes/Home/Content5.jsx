@@ -12,7 +12,7 @@ class Content extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      man: 'tongjian',
+      man: 'tongjian'
     };
   }
 
@@ -47,14 +47,12 @@ class Content extends React.Component {
         {...props}
         className={`content-template-wrapper content-half-wrapper ${props.className}-wrapper`}
       >
-        {isMode
-          ? undefined
-          : (<ul
-              key='ul'
-              className='change'
-            >
-              {children}
-            </ul>)}
+        {isMode ? undefined : (<ul
+          key='ul'
+          className='change'
+        >
+          {children}
+        </ul>)}
         <OverPack
           className={`content-template ${props.className}`}
           location={props.id}

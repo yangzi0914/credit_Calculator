@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
 import { Link } from 'dva/router';
-import logo from '../../assets/logo@2x.png';
+import logo from '../../assets/logo.png';
 
 const Item = Menu.Item;
 
