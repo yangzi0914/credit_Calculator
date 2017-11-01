@@ -24,6 +24,7 @@ class Content extends React.Component {
         {...props}
         className={`content-template-wrapper content-half-wrapper ${props.className}-wrapper`}
       >
+        <div style={{height: '200px'}}></div>
         <OverPack
           className={`content-template ${props.className}`}
           location={props.id}

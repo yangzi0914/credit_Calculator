@@ -3,17 +3,21 @@
 @content0: content0;
 
 .@{content0} {
+  height: 50vh !important;
+  &-wrapper {
+    height: auto;
+  }
   &-img {
     height: 100%;
-    width: 50%;
+    width:48%;
     overflow: hidden;
     position: absolute;
     left: 0;
     span {
       display: inline-block;
       position: absolute;
-      width: 55%;
-      right: 10%;
+      width: 61%;
+      right: 5%;
       line-height: 50vh;
       height: 50vh;
       margin: auto;
@@ -22,24 +26,25 @@
       img {
         vertical-align: middle;
         &:first-of-type {
-          width: 48%;
+          width: 47%;
+          margin-right: 2%;
         }
         &:nth-of-type(2) {
-          width: 50%;
+          width: 51%;
         }
       }
     }
   }
   &-text {
     display: block;
-    width: 38%;
-    height: 150px;
+    width: 44%;
+    height: 260px;
     vertical-align: top;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 10%;
+    right: 2%;
     & p, & h1 {
       position: relative !important;
       width: 75%;

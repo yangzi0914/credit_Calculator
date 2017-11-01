@@ -109,7 +109,7 @@ class Content extends React.Component {
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
-            <p key="p" id={`${props.id}-content`} style={{fontSize: '12px', lineHeight: '22px'}}>
+            <p key="p" id={`${props.id}-content`} style={{fontSize: '14px', lineHeight: '28px'}}>
               具有深厚的品牌与零售经验，着力建设 CRM 为核心的营销与服务体系，并以此为依托，建设 “顾客体验营销”，成立 “顾客体验团队”，改变行业内“场地为王” 的经营手法。
               毕业于山东大学，后在北京体育大学攻读体育管理研究生。专注于体育行业工作近 20 年，见证了体育行业的成长与爆发。
               先后任职于李宁品牌，adidas China (2005-2010)，负责奥林匹克业务和品牌营销业务；2010 年开始转入户外运动领域，在奥索卡品牌，KOLONSPORT 负责公司运营。
