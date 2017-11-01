@@ -3747,7 +3747,7 @@ samp {
 #content_0_0:before { background-image: url(./static/banner.5b21f35e.png); position: relative }
 }
 @media screen and (max-width: 767px) {
-#nav_0_0-menu .header0-phone-nav-text { width: 50%; height: auto; top: 52px; padding-top: 0px; border-radius: 4px; overflow: hidden}
+#nav_0_0-menu .header0-phone-nav-text { width: 50%; height: auto; top: 64px; right: 15px; padding-top: 0px; border-radius: 4px;}
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item { height: 60px; line-height: 60px; background-color: #fff; font-size: 18px }
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item a {color: #757575;}
 #nav_0_0-menu .header0-phone-nav-text .ant-menu .ant-menu-item.ant-menu-item-selected,
@@ -3843,7 +3843,6 @@ h4 {
 }
 .content-template-wrapper .content-template h1 {
   font-size: 32px;
-  font-weight: normal;
   color: #404040;
   line-height: 48px;
 }
@@ -3983,10 +3982,28 @@ h4 {
     -o-transition: opacity 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     transition: opacity 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     pointer-events: none;
-    background: #404040;
+    -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+  }
+  .header0-phone-nav-text ul {
+    border-radius: 4px;
+    overflow: hidden;
   }
   .header0-phone-nav-text .ant-menu-item-selected {
     border: none;
+    font-weight: bold;
+  }
+  .header0-phone-nav-text .myIcon {
+    position: absolute;
+    right: 10px;
+    top: -6px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px;
+    border-style: solid;
+    border-color: transparent transparent #fff;
+    z-index: 999;
   }
 }
 .banner0 {
@@ -4098,7 +4115,6 @@ h4 {
   position: relative;
   top: 7%;
   font-size: 28px;
-  font-weight: normal;
 }
 @media screen and (max-width: 767px) {
   .content7-wrapper {
@@ -4654,4 +4670,36 @@ h4 {
   .footer0-img span img {
     width: 100%;
   }
+}
+.download {
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+}
+.download .close {
+  position: relative;
+  margin-left: 4%;
+  width: 3.2%;
+  vertical-align: middle;
+}
+.download .logo_download {
+  position: relative;
+  margin-left: 4%;
+  width: 25%;
+  vertical-align: middle;
+}
+.download a {
+  float: right;
+  margin: 11px 4% 0 auto;
+  width: 15.2%;
+  height: 28px;
+  text-align: center;
+  border: 1px solid #108EE9;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 26px;
 }
