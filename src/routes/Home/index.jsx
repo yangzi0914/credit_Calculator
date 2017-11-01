@@ -11,6 +11,7 @@ import Content3 from './Content3';
 import Content4 from './Content4';
 import Content5 from './Content5';
 import Footer from './../common/Footer';
+import Download from './../common/Download';
 
 import './less/antMotion_style.less';
 
@@ -56,6 +57,7 @@ export default class Home extends React.Component {
     return (
       <div className="templates-wrapper">
         {children}
+        {this.state.isMode ? (<Download id="download_0_0" key="download_0_0"/>) : undefined}
       </div>
     );
   }

@@ -40,7 +40,7 @@ class Footer extends React.Component {
         {isMode ? (<ul key="img" id={`${props.id}-img`} className="footer-h5">
           <li>
             <p>爱滑冰微信公众号</p>
-            <img src={app_QR_phone}/>
+            <img src={weChat_QR_phone}/>
           </li>
           <li>
             <p>爱滑冰app下载</p>
