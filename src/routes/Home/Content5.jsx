@@ -12,14 +12,27 @@ class Content extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      man: 'tongjian'
+      man: 'tongjian',
+      change: false,
+      animType: {
+        queue: props.isMode ? 'bottom' : 'right',
+        one: props.isMode ? { y: '+=30', opacity: 0, type: 'from' }
+          : { x: '-=30', opacity: 0, type: 'from' },
+      }
     };
   }
 
   changeClick = (val) => {
     if (val) {
+      let queue1 = this.state.change ? 'right' : 'left';
+      let x1 = this.state.change ? '+=30' : '-=30';
       this.setState({
-        man: val.item
+        man: val.item,
+        animType: {
+          queue: queue1,
+          one: { x: x1, opacity: 0, type: 'from' },
+        },
+        change: !this.state.change
       });
     }
   }
@@ -28,11 +41,11 @@ class Content extends React.Component {
     const props = { ...this.props };
     const isMode = props.isMode;
     delete props.isMode;
-    const animType = {
-      queue: isMode ? 'bottom' : 'right',
-      one: isMode ? { y: '+=30', opacity: 0, type: 'from' }
-        : { x: '-=30', opacity: 0, type: 'from' },
-    }
+    // const animType = {
+    //   queue: isMode ? 'bottom' : 'right',
+    //   one: isMode ? { y: '+=30', opacity: 0, type: 'from' }
+    //     : { x: '-=30', opacity: 0, type: 'from' },
+    // }
     const children = ['tongjian', 'jiaxu'].map((item, index) => {
       return (<li key={index}
         className={item}
@@ -60,10 +73,11 @@ class Content extends React.Component {
         >
           <TweenOne
             key="img"
-            animation={animType.one}
+            animation={this.state.animType.one}
             className={`${props.className}-img`}
             id={`${props.id}-imgWrapper`}
             resetStyleBool
+            updateReStart
           >
             <span id={`${props.id}-img`}>
               <img src={tongjian}/>
@@ -71,7 +85,7 @@ class Content extends React.Component {
           </TweenOne>
           <QueueAnim
             className={`${props.className}-text`}
-            type={animType.queue}
+            type={this.state.animType.queue}
             key="text"
             leaveReverse
             ease={['easeOutCubic', 'easeInCubic']}
@@ -92,10 +106,11 @@ class Content extends React.Component {
         >
           <TweenOne
             key="img"
-            animation={animType.one}
+            animation={this.state.animType.one}
             className={`${props.className}-img`}
             id={`${props.id}-imgWrapper`}
             resetStyleBool
+            updateReStart
           >
             <span id={`${props.id}-img`}>
               <img src={jiaxu}/>
@@ -103,7 +118,7 @@ class Content extends React.Component {
           </TweenOne>
           <QueueAnim
             className={`${props.className}-text`}
-            type={animType.queue}
+            type={this.state.animType.queue}
             key="text"
             leaveReverse
             ease={['easeOutCubic', 'easeInCubic']}
