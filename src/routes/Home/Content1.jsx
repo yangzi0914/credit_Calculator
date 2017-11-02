@@ -55,7 +55,7 @@ class Content extends React.Component {
           className={`content-template ${props.className}`}
           id={`${props.id}-content1`}
         >
-          {isMode ? undefined : (<div key='div1' style={{height: '160px'}}></div>)} 
+          <div key='div1' style={{height: `${isMode ? '60px' : '160px'}`}}></div>
           <div key='div'>
             <TweenOne
               component="div"
@@ -82,7 +82,7 @@ class Content extends React.Component {
           // location={props.id}
           id={`${props.id}-content`}
         >
-          {isMode ? undefined : (<div key='div2' style={{height: '80px'}}></div>)} 
+          <div key='div1' style={{height: `${isMode ? '30px' : '80px'}`}}></div>
           <TweenOne
             animation={{ y: '+=30', opacity: 0, type: 'from' }}
             component="h2"
