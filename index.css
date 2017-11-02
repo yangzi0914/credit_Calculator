@@ -3742,9 +3742,10 @@ samp {
 }
 
 @media screen and (min-width: 768px) {
-#nav_0_0-menu .ant-menu-item-active,#nav_0_0-menu.ant-menu-horizontal > .ant-menu-item-selected { color: #fff; border-color: #fff; opacity: 1;}
+#nav_0_0-menu .ant-menu-item-active { color: #fff; opacity: 1; border-bottom: transparent}
+#nav_0_0-menu.ant-menu-horizontal > .ant-menu-item-selected { color: #fff; border-color: #fff; opacity: 1;}
 #nav_0_0 { background-color: rgba(0,0,0,0.5) }
-#content_0_0:before { background-image: url(./static/banner.5b21f35e.png); position: relative }
+#content_0_0:before { background-image: url(./static/banner.6f406167.png); position: relative }
 }
 @media screen and (max-width: 767px) {
 #nav_0_0-menu .header0-phone-nav-text { width: 50%; height: auto; top: 64px; right: 15px; padding-top: 0px; border-radius: 4px;}
@@ -3907,12 +3908,9 @@ h4 {
 }
 .header0-nav .ant-menu li a {
   color: #FFF;
+  font-size: 14px;
 }
-.header0-nav .ant-menu-horizontal > .ant-menu-item-active {
-  color: #34aff3;
-  border-bottom-color: #34aff3;
-}
-.header0-nav .ant-menu-horizontal > .ant-menu-item-active a:hover {
+.header0-nav .ant-menu li a:hover {
   color: #fff;
 }
 @media screen and (max-width: 767px) {
@@ -4014,7 +4012,7 @@ h4 {
   border-color: #666;
 }
 .banner0:before {
-  background-image: url(./static/banner.5b21f35e.png);
+  background-image: url(./static/banner.6f406167.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -4048,7 +4046,7 @@ h4 {
   height: 1000px;
 }
 .content7-wrapper .content-template:nth-of-type(2) {
-  height: 350px;
+  height: auto;
 }
 .content7-wrapper .content-template:nth-of-type(2) > p {
   top: 7%;
@@ -4162,9 +4160,15 @@ h4 {
     top: 0;
   }
 }
+.content0 {
+  height: 50vh !important;
+}
+.content0-wrapper {
+  height: auto;
+}
 .content0-img {
   height: 100%;
-  width: 50%;
+  width: 48%;
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -4172,8 +4176,8 @@ h4 {
 .content0-img span {
   display: inline-block;
   position: absolute;
-  width: 55%;
-  right: 10%;
+  width: 61%;
+  right: 5%;
   line-height: 50vh;
   height: 50vh;
   margin: auto;
@@ -4184,21 +4188,22 @@ h4 {
   vertical-align: middle;
 }
 .content0-img span img:first-of-type {
-  width: 48%;
+  width: 47%;
+  margin-right: 2%;
 }
 .content0-img span img:nth-of-type(2) {
-  width: 50%;
+  width: 51%;
 }
 .content0-text {
   display: block;
-  width: 38%;
-  height: 150px;
+  width: 44%;
+  height: 260px;
   vertical-align: top;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  right: 10%;
+  right: 2%;
 }
 .content0-text p,
 .content0-text h1 {
@@ -4219,7 +4224,6 @@ h4 {
     height: 500px;
   }
   .content0-wrapper .content0 {
-    overflow: hidden;
     width: 90%;
     margin: auto;
     height: auto;
@@ -4280,8 +4284,8 @@ h4 {
 .content1-img span {
   display: block;
   position: absolute;
-  width: 55%;
-  left: 10%;
+  width: 68%;
+  left: 9%;
   line-height: 50vh;
   height: 50vh;
   margin: auto;
@@ -4293,13 +4297,13 @@ h4 {
 }
 .content1-text {
   display: block;
-  width: 34%;
-  height: 150px;
+  width: 42%;
+  height: 260px;
   vertical-align: top;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 10%;
+  left: 6%;
   margin: auto;
 }
 .content1-text p,
@@ -4366,7 +4370,7 @@ h4 {
   }
 }
 .content2-wrapper {
-  background-image: url(./static/newMedia.38329b41.png);
+  background-image: url(./static/newMedia.c0d8b527.png);
   background-size: cover;
   background-position: center;
   height: 900px;
@@ -4447,9 +4451,10 @@ h4 {
   position: relative;
   width: 100%;
   max-width: 1200px;
+  height: 0;
+  margin: auto;
   text-align: right;
   top: 70%;
-  margin: auto;
   z-index: 3;
 }
 .content3-wrapper > ul > li {
@@ -4485,8 +4490,8 @@ h4 {
 }
 .content3-text {
   display: block;
-  width: 59%;
-  height: 185px;
+  width: 58.5%;
+  height: 230px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -4499,12 +4504,13 @@ h4 {
   text-align: center;
 }
 .content3-text h4 {
-  margin-top: 40px;
+  margin-top: 33px;
   font-size: 18px !important;
   letter-spacing: 3.86px;
 }
 .content3-text p {
   font-size: 16px;
+  height: 140px;
   line-height: 32px;
   color: #999;
 }
@@ -4562,7 +4568,8 @@ h4 {
   }
   .content3-wrapper .content3-text p {
     top: 35px;
-    font-size: 12px;
+    font-size: 12px !important;
+    height: auto;
     line-height: 20px !important;
   }
 }
