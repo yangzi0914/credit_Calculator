@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import aboutUs1 from '../../assets/aboutUs1.png';
@@ -19,17 +18,9 @@ class Content extends React.Component {
     className: 'content7',
   };
 
-  // getBlockChildren = (item, i) =>(
-  //   <li key={i} id={`${this.props.id}-block${i}`}>
-  //     <div className="icon">
-  //       <img src={item.icon} width="100%" />
-  //     </div>
-  //     <h3>{item.title}</h3>
-  //     <p>{item.content}</p>
-  //   </li>);
-
   render() {
     const props = { ...this.props };
+    const isMode = props.isMode;
     delete props.isMode;
     return (
       <div
@@ -59,17 +50,23 @@ class Content extends React.Component {
             翼翔冰雪® 由花样滑冰世界冠军佟健先生于 2015 年 7 月创办，现已形成了由体育 + 教育、体育 + 文化和新媒体构成的全面的中国冰雪运动服务平台。
             <br /><span />
           </TweenOne>
+        </OverPack>
+        <OverPack
+          className={`content-template ${props.className}`}
+          id={`${props.id}-content1`}
+        >
+          {isMode ? undefined : (<div key='div1' style={{height: '160px'}}></div>)} 
           <div key='div'>
-            <QueueAnim
+            <TweenOne
               component="div"
-              key="div"
-              type='left'
+              key="div-img"
+              animation={{ x: '-=30', opacity: 0, type: 'from' }}
               className={`${props.className}-img`}
             >
               <img src={aboutUs1} />
               <img src={aboutUs2} />
               <img src={aboutUs3} />
-            </QueueAnim>
+            </TweenOne>
             <TweenOne
               animation={{ x: '+=30', opacity: 0, type: 'from' }}
               component="img"
@@ -85,6 +82,7 @@ class Content extends React.Component {
           // location={props.id}
           id={`${props.id}-content`}
         >
+          {isMode ? undefined : (<div key='div2' style={{height: '80px'}}></div>)} 
           <TweenOne
             animation={{ y: '+=30', opacity: 0, type: 'from' }}
             component="h2"

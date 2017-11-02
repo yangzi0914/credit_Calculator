@@ -6,26 +6,25 @@
     height: auto;
     // overflow: hidden;
     .content-template{
-      height: 1000px;
-    }
-    .content-template:nth-of-type(2){
       height: auto;
-      > p {
-        top: 7%
-      }
     }
+    // .content-template:nth-of-type(3){
+    //   height: auto;
+    //   > p {
+    //     top: 7%
+    //   }
+    // }
   }
   > h1 {
     text-align: center;
     position: relative;
-    top: 11%;
+    margin: 124px auto 24px;
     font-size: 32px;
   }
   > p {
     width: 50%;
     text-align: center;
     position: relative;
-    top: 11%;
     font-size: 16px !important;
     color: #999;
     line-height: 28px;
@@ -40,10 +39,8 @@
   }
   > div {
     position: relative;
-    top: 24%;
-    // height: 555px;
-    width: 90%;
     margin: auto;
+    width: 90%;
     &::after{
       content: '';
       display: block;
@@ -76,7 +73,6 @@
   > h2 {
     text-align: center;
     position: relative;
-    top: 7%;
     font-size: 28px;
   }
 
@@ -86,7 +82,7 @@
   .@{content7}-wrapper {
     height: auto;
     .@{content7} {
-      height: 400px;
+      height: auto;
       width: 90%;
       max-width: 100%;
       &:nth-of-type(2){

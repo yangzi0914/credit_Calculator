@@ -22,9 +22,9 @@ class Footer extends React.Component {
     const isMode = props.isMode;
     delete props.isMode;
     const animType = {
-      queue: isMode ? 'bottom' : 'right',
+      queue: isMode ? 'bottom' : 'left',
       one: isMode ? { y: '+=30', opacity: 0, type: 'from' }
-        : { x: '-=30', opacity: 0, type: 'from' },
+        : { x: '+=30', opacity: 0, type: 'from' },
     }
     return (<OverPack
       {...props}
