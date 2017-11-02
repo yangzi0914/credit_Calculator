@@ -3864,8 +3864,9 @@ h4 {
   z-index: 970;
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
 }
 .header0-logo {
   display: inline-block;
@@ -4108,27 +4109,20 @@ h4 {
     width: 90%;
     max-width: 100%;
   }
-  .content7-wrapper .content7:nth-of-type(2) {
-    height: auto;
-  }
-  .content7-wrapper .content7:nth-of-type(2) p {
+  .content7-wrapper .content7:nth-of-type(3) p {
     font-size: 12px !important;
     line-height: 20px;
-    top: 0;
     margin-bottom: 10px;
   }
   .content7-wrapper .content7 > h1 {
-    top: 0;
     margin: 40px auto 20px;
     font-size: 22px;
     line-height: 30px;
   }
   .content7-wrapper .content7 > p {
-    top: 0;
     width: 90%;
     font-size: 13px !important;
     line-height: 24px;
-    margin: 0 auto 60px;
   }
   .content7-wrapper .content7 > p > span {
     height: 2px;
@@ -4136,13 +4130,11 @@ h4 {
     margin-top: 10px;
   }
   .content7-wrapper .content7 > div {
-    top: 0;
     width: 100%;
   }
   .content7-wrapper .content7 h2 {
     font-size: 16px;
-    margin: 20px auto 8px;
-    top: 0;
+    margin: 0 auto 8px;
   }
 }
 .content0 {
