@@ -25,9 +25,9 @@ class Header extends React.Component {
     const props = { ...this.props };
     const isMode = props.isMode;
     delete props.isMode;
-    const navData = { menu1: '首页', menu2: '资讯', menu3: '公司介绍'};
+    const navData = { menu1: ['首页', '/'], menu2: ['资讯', '/information'], menu3: ['公司介绍', '/company']};
     const navChildren = Object.keys(navData)
-      .map((key, i) => (<Item key={i}><Link to="/indexPage">{navData[key]}</Link></Item>));
+      .map((key, i) => (<Item key={i}><Link to={navData[key][1]}>{navData[key][0]}</Link></Item>));
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}
