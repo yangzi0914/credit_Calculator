@@ -35,7 +35,7 @@ export default class Company extends React.Component {
   render() {
     return (
       <div>
-        <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode}/>
+        <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode} />
         <div className="company_banner" />
         <div className="width">
           <div className="company_main">
@@ -48,7 +48,7 @@ export default class Company extends React.Component {
             <p className="company_content">投稿邮箱：iskating@foxmail.com<br />联系与合作：xu.jia@iskating.cn</p>
           </div>
         </div>
-        <Footer id="footer_0_0" key="footer_0_0" isMode={this.state.isMode}/>
+        <Footer id="footer_0_0" key="footer_0_0" isMode={this.state.isMode} />
       </div>
     );
   }
