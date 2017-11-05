@@ -3,6 +3,10 @@
 @content1: content1;
 
 .@{content1} {
+  height: 380px !important;
+  &-wrapper {
+    height: auto;
+  }
   &-img {
     height: 100%;
     width: 54%;
@@ -14,8 +18,8 @@
       position: absolute;
       width: 68%;
       left: 9%;
-      line-height: 50vh;
-      height: 50vh;
+      line-height: 380px;
+      height: 380px;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -59,12 +63,12 @@
       width: 90%;
       margin: auto;
       &-img, &-text {
-        width: 85%;
         display: block;
         position: relative;
         text-align: center;
       }
       &-img {
+        width: 87%;
         margin: 0 auto 20px;
         height: 240px;
         span {
@@ -77,6 +81,7 @@
         }
       }
       &-text {
+        width: 85%;
         height: 90px;
         margin-bottom: 20px;
         left: 0;
