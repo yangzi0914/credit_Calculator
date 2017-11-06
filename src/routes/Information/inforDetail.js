@@ -10,7 +10,7 @@ export default class Information extends React.Component {
   render() {
     return (
       <div className={styles.normal}>
-        <Nav id="nav_0_0" key="nav_0_0" />
+        <Nav id="nav_0_0" key="nav_0_0" selectedKeys="1" />
         <div>我是详情</div>
         <div>
           <div

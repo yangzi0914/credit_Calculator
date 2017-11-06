@@ -4,6 +4,7 @@ import './css/company.css';
 
 import Nav from './../common/Nav';
 import Footer from './../common/Footer';
+import Download from './../common/Download';
 
 export default class Company extends React.Component {
   constructor(props) {
@@ -35,7 +36,7 @@ export default class Company extends React.Component {
   render() {
     return (
       <div>
-        <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode} />
+        <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode} selectedKeys="2" />
         <div className="company_banner" />
         <div className="width">
           <div className="company_main">
@@ -49,6 +50,7 @@ export default class Company extends React.Component {
           </div>
         </div>
         <Footer id="footer_0_0" key="footer_0_0" isMode={this.state.isMode} />
+        {this.state.isMode ? (<Download id="download_0_0" key="download_0_0" />) : undefined}
       </div>
     );
   }

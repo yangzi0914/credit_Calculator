@@ -24,7 +24,9 @@ class Header extends React.Component {
   render() {
     const props = { ...this.props };
     const isMode = props.isMode;
+    const selectedKeys = props.selectedKeys;
     delete props.isMode;
+    delete props.selectedKeys;
     const navData = { menu1: ['首页', '/'], menu2: ['资讯', '/information'], menu3: ['公司介绍', '/company']};
     const navChildren = Object.keys(navData)
       .map((key, i) => (<Item key={i}><Link to={navData[key][1]}>{navData[key][0]}</Link></Item>));
@@ -59,7 +61,7 @@ class Header extends React.Component {
         >
           <span className='myIcon'></span>
           <Menu
-            defaultSelectedKeys={['0']}
+            defaultSelectedKeys={[selectedKeys]}
             mode="inline"
             theme="dark"
           >
@@ -71,7 +73,7 @@ class Header extends React.Component {
         animation={{ x: 30, type: 'from', ease: 'easeOutQuad' }}
       >
         <Menu
-          mode="horizontal" defaultSelectedKeys={['0']}
+          mode="horizontal" defaultSelectedKeys={[selectedKeys]}
           id={`${this.props.id}-menu`}
         >
           {navChildren}

@@ -1,4 +1,5 @@
 import React from 'react';
+import enquire from 'enquire.js';
 // import PropTypes from 'prop-types';
 // import { routerRedux } from 'dva/router';
 // import { connect } from 'dva';
@@ -10,7 +11,7 @@ import styles from './css/information.css';
 import Nav from './../common/Nav';
 import Footer from './../common/Footer';
 import infoList from './../common/inforData/inforData';
-// import Download from './../common/Download';
+import Download from './../common/Download';
 
 // temp.news.content.replace(/<img[^>]+>/gi,'')
 const PAGE_SIZE = 6;
@@ -22,8 +23,30 @@ export default class Information extends React.Component {
     this.state = {
       current: 1,
       inforData: infoList.slice(0, 5),
+      isMode: false,
     };
   }
+
+  componentDidMount() {
+    // 适配手机屏幕;
+    this.enquireScreen((isMode) => {
+      this.setState({ isMode });
+    });
+  }
+
+  enquireScreen = (cb) => {
+    /* eslint-disable no-unused-expressions */
+    enquire.register('only screen and (min-width: 320px) and (max-width: 767px)', {
+      match: () => {
+        cb && cb(true);
+      },
+      unmatch: () => {
+        cb && cb();
+      },
+    });
+    /* eslint-enable no-unused-expressions */
+  }
+
   pageChangeHandler = (page) => {
     this.setState({
       current: page,
@@ -45,7 +68,7 @@ export default class Information extends React.Component {
     });
     return (
       <div className={styles.normal}>
-        <Nav id="nav_0_0" key="nav_0_0" />
+        <Nav id="nav_0_0" key="nav_0_0" selectedKeys="1" />
         <div>我是资讯</div>
         <ul>
           {children}
@@ -57,6 +80,7 @@ export default class Information extends React.Component {
           onChange={this.pageChangeHandler}
         />
         <Footer id="footer_0_0" key="footer_0_0" />
+        {this.state.isMode ? (<Download id="download_0_0" key="download_0_0" />) : undefined}
       </div>
     );
   }
