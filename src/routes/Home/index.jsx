@@ -19,7 +19,8 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMode: false
+      isMode: false,
+      white: false
     };
   }
 
@@ -28,6 +29,11 @@ export default class Home extends React.Component {
     this.enquireScreen((isMode) => {
       this.setState({ isMode });
     });
+
+    window.addEventListener('scroll', () => {
+      var top = document.body.scrollTop || document.documentElement.scrollTop
+      top > (document.body.clientHeight - 40) ? this.setState({ white: true }) : this.setState({ white: false });
+    })
   }
 
   enquireScreen = (cb) => {
@@ -45,7 +51,7 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode} selectedKeys="0"/>,
+      <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode} selectedKeys="0" className={`${this.state.white ? 'white ' : ''}header0`}/>,
       <Content0 id="content_0_0" key="content_0_0" isMode={this.state.isMode}/>,
       <Content1 id="content_9_0" key="content_9_0" isMode={this.state.isMode}/>,
       <Content2 id="content_2_0" key="content_2_0" isMode={this.state.isMode}/>,

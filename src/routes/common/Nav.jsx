@@ -34,6 +34,7 @@ class Header extends React.Component {
       component="header"
       animation={{ opacity: 0, type: 'from' }}
       {...props}
+      className={`${props.className} ${selectedKeys == '0' ? '' : 'white rel'}`}
     >
       <TweenOne
         className={`${this.props.className}-logo`}

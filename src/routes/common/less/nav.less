@@ -9,6 +9,10 @@
   position: fixed;
   top: 0;
   left: 0;
+  transition: background .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  &.rel {
+    position: relative;
+  }
   &-logo {
     display: inline-block;
     position: absolute;
@@ -53,6 +57,9 @@
 
 @media screen and (max-width: 767px) {
   .@{header} {
+    &.white em {
+      background-color: #757575;
+    }
     &-logo {
       z-index: 101;
       left: 50%;
