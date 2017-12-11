@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import aboutUs1 from '../../assets/aboutUs1.png';
-import aboutUs2 from '../../assets/aboutUs2.png';
-import aboutUs3 from '../../assets/aboutUs3.png';
-import aboutUs4 from '../../assets/aboutUs4.png';
+import artCenter1 from '../../assets/artCenter1.png';
+import artCenter2 from '../../assets/artCenter2.png';
 
 class Content extends React.Component {
 
@@ -31,75 +29,27 @@ class Content extends React.Component {
           className={`content-template ${props.className}`}
           location={props.id}
         >
+          <div key='div1' style={{height: `${isMode ? '60px' : '240px'}`}}></div>
           <TweenOne
-            animation={{ y: '+=30', opacity: 0, type: 'from' }}
-            component="h1"
-            key="h1"
+            animation={{ x: '-=30', opacity: 0, type: 'from' }}
+            key="img"
             reverseDelay={300}
-            id={`${props.id}-title`}
+            className={`${props.className}-leftImg`}
           >
-            关于我们
+            <img src={artCenter1} />
           </TweenOne>
           <TweenOne
-            animation={{ y: '+=30', opacity: 0, type: 'from' }}
-            component="p"
-            key="p"
+            animation={{ x: '+=30', opacity: 0, type: 'from' }}
+            component="div"
+            key="div"
             reverseDelay={300}
-            id={`${props.id}-content`}
+            className={`${props.className}-main`}
           >
-            翼翔冰雪® 由花样滑冰世界冠军佟健先生于 2015 年 7 月创办，现已形成了由体育 + 教育、体育 + 文化和新媒体构成的全面的中国冰雪运动服务平台。
-            <br /><span />
-          </TweenOne>
-        </OverPack>
-        <OverPack
-          className={`content-template ${props.className}`}
-          id={`${props.id}-content1`}
-        >
-          <div key='div1' style={{height: `${isMode ? '60px' : '160px'}`}}></div>
-          <div key='div'>
-            <TweenOne
-              component="div"
-              key="div-img"
-              animation={{ x: '-=30', opacity: 0, type: 'from' }}
-              className={`${props.className}-img`}
-            >
-              <img src={aboutUs1} />
-              <img src={aboutUs2} />
-              <img src={aboutUs3} />
-            </TweenOne>
-            <TweenOne
-              animation={{ x: '+=30', opacity: 0, type: 'from' }}
-              component="img"
-              key="img"
-              reverseDelay={300}
-              src={aboutUs4}
-            >
-            </TweenOne>
-          </div>
-        </OverPack>
-        <OverPack
-          className={`content-template ${props.className}`}
-          // location={props.id}
-          id={`${props.id}-content`}
-        >
-          <div key='div1' style={{height: `${isMode ? '30px' : '80px'}`}}></div>
-          <TweenOne
-            animation={{ y: '+=30', opacity: 0, type: 'from' }}
-            component="h2"
-            key="h2"
-            reverseDelay={300}
-            id={`${props.id}-title`}
-          >
-            庞清佟健冰上中心
-          </TweenOne>
-          <TweenOne
-            animation={{ y: '+=30', opacity: 0, type: 'from' }}
-            component="p"
-            key="text"
-            reverseDelay={300}
-            id={`${props.id}-content`}
-          >
-            冰上中心旨在提供高端优质的花样滑冰课程培训，打造由前国家队选手组成的冠军教练团队，每位学员均将得到国家级高水平教练的指导，同时提供陆地训练、舞蹈课程等，满足学员各方面的需求。
+            <h3><span>PANGQING TONGJIAN Skating&Art Center </span><br/>庞清佟健冰上艺术中心</h3>
+            <p>庞清佟健冰上艺术中心旨在提供高端优质的花样滑冰课程培训，由国际顶级选手和国家队选手亲情打造体育加文化，冰上盛宴。每位学员均将得到国家级高水平教练的指导，同时提供陆地训练、舞蹈课程等，满足学员各方面的需求。</p>
+            <p>展现行业DNA，为高端客群做好系统服务；与总局合作培训，专业教练人才；研发统一教材、视频教学、标准化规模化培训。</p>
+            <p><a>了解更多</a></p>
+            <img src={artCenter2} />
           </TweenOne>
         </OverPack>
       </div>
