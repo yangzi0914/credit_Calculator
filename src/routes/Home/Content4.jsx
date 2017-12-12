@@ -19,8 +19,6 @@ class Content extends React.Component {
     };
   }
 
-  // getDelay = e => e % 3 * 100 + Math.floor(e / 3) * 100 + 300;
-
   render() {
     const props = { ...this.props };
     delete props.isMode;
