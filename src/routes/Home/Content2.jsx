@@ -59,7 +59,6 @@ class Content extends React.Component {
             className={`${props.className}-text`}
             type={animType.queue}
             key="text"
-            leaveReverse
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
