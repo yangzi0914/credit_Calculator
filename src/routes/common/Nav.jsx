@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
 import { Link } from 'dva/router';
-import logo from '../../assets/logo.png';
 
 const Item = Menu.Item;
 
@@ -41,7 +40,6 @@ class Header extends React.Component {
         animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
         id={`${this.props.id}-logo`}
       >
-        <img width="100%" src={logo}/>
       </TweenOne>
       {isMode ? (<div
         className={`${this.props.className}-phone-nav${this.state.phoneOpen ? ' open' : ''}`}
