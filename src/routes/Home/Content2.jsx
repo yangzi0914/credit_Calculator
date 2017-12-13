@@ -23,12 +23,12 @@ class Content extends React.Component {
         {...props}
         className={`content-template-wrapper content-half-wrapper ${props.className}-wrapper`}
       >
-        {isMode ? undefined : (<div style={{height: '200px'}}></div>)}
+        {isMode ? undefined : (<div style={{height: '200px'}} key="div1"></div>)}
         <OverPack
           className={`content-template ${props.className}`}
           id={`${props.id}-content1`}
         >
-          <div key="div" style={{height: '485px', position: 'relative'}}>
+          <div key="div2" style={{height: '485px', position: 'relative'}}>
             <TweenOne
                 animation={{ x: '-=30', opacity: 0, type: 'from' }}
                 component="img"
@@ -53,7 +53,7 @@ class Content extends React.Component {
           className={`content-template ${props.className}`}
           id={`${props.id}-content`}
         >
-          {isMode ? undefined : (<div style={{height: '120px'}}></div>)}
+          {isMode ? undefined : (<div style={{height: '120px'}} key="div3"></div>)}
           <TweenOne
                 animation={{ y: '-=30', opacity: 0, type: 'from' }}
                 key="text"

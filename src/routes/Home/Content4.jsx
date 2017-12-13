@@ -40,18 +40,18 @@ class Content extends React.Component {
           location={props.id}
         >
           <TweenOne
-              key="img"
-              animation={{ y: '-=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }}
-              className={`${props.className}-text`}
-              reverseDelay={300}
-            >
-              <h3 key="h3">新媒体线上平台</h3>
-              <p key="p1">依托爱滑冰微信服务号及爱滑冰 app ，搭建最专业的花样滑冰项目新媒体平台，普及冰上运动相关资讯、知识与文化，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。</p>
-              <p key="p2"><a>了解更多</a></p>
-            </TweenOne>
-          <div className="tab">
+            key="img"
+            animation={{ y: '-=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }}
+            className={`${props.className}-text`}
+            reverseDelay={300}
+          >
+            <h3 key="h3">新媒体线上平台</h3>
+            <p key="p1">依托爱滑冰微信服务号及爱滑冰 app ，搭建最专业的花样滑冰项目新媒体平台，普及冰上运动相关资讯、知识与文化，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。</p>
+            <p key="p2"><a>了解更多</a></p>
+          </TweenOne>
+          <div key="div">
             <TweenOne
-              key="img"
+              key="img1"
               animation={{ x: '-=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }}
               className={`${props.className}-img ${this.state.typeIdx == 0 ? 'one' : ''}`}
               reverseDelay={300}
