@@ -1,6 +1,5 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
-import QueueAnim from 'rc-queue-anim';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import newMedia_web from '../../assets/newMedia_web.png';
 import newMedia_sina from '../../assets/newMedia_sina.png';
@@ -40,23 +39,22 @@ class Content extends React.Component {
           className={`content-template ${props.className}`}
           location={props.id}
         >
-          <QueueAnim
-            className={`${props.className}-text`}
-            type='top'
-            key="text"
-            ease={['easeOutCubic', 'easeInCubic']}
-            id={`${props.id}-textWrapper`}
-          >
-            <h3 key="h3">新媒体线上平台</h3>
-            <p key="p1">依托爱滑冰微信服务号及爱滑冰 app ，搭建最专业的花样滑冰项目新媒体平台，普及冰上运动相关资讯、知识与文化，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。</p>
-            <p key="p2"><a>了解更多</a></p>
-          </QueueAnim>
+          <TweenOne
+              key="img"
+              animation={{ y: '-=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }}
+              className={`${props.className}-text`}
+              reverseDelay={300}
+            >
+              <h3 key="h3">新媒体线上平台</h3>
+              <p key="p1">依托爱滑冰微信服务号及爱滑冰 app ，搭建最专业的花样滑冰项目新媒体平台，普及冰上运动相关资讯、知识与文化，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。</p>
+              <p key="p2"><a>了解更多</a></p>
+            </TweenOne>
           <div className="tab">
             <TweenOne
               key="img"
               animation={{ x: '-=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }}
               className={`${props.className}-img ${this.state.typeIdx == 0 ? 'one' : ''}`}
-              resetStyleBool
+              reverseDelay={300}
             >
               <img src={type[this.state.typeIdx]} />
             </TweenOne>
@@ -65,7 +63,7 @@ class Content extends React.Component {
               animation={{ x: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }}
               className={`${props.className}-rightText`}
               id={`${props.id}-imgWrapper`}
-              resetStyleBool
+              reverseDelay={300}
             >
               {children}
             </TweenOne>

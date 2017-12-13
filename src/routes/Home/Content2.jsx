@@ -1,5 +1,4 @@
 import React from 'react';
-import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import perform1 from '../../assets/perform1.png';
@@ -55,22 +54,21 @@ class Content extends React.Component {
           id={`${props.id}-content`}
         >
           {isMode ? undefined : (<div style={{height: '120px'}}></div>)}
-          <QueueAnim
-            className={`${props.className}-text`}
-            type={animType.queue}
-            key="text"
-            ease={['easeOutCubic', 'easeInCubic']}
-            id={`${props.id}-textWrapper`}
-          >
-            <h3 key="h3"><span>Magic on ice Show </span><br/>Magic on ice 表演团</h3>
-            <p key="p1">由世界冠军佟健领衔，成员包括多位全国冠军等前国家队选手及教练，并且吸纳优秀学员及花样滑冰爱好者加入表演团，致力于打造体验式驻场演出、剧目形式演出、晚会形式演出。</p>
-            <p key="p2">
-              <span>•</span>体验式驻场演出：体验式的驻场，以娱乐体验为主；<br/>
-	            <span>•</span>剧目形式演出：市场需求驱动，进行商业巡回演出；<br/>
-	            <span>•</span>晚会形式演出：展示中国文化，宣传2022全球巡演。
-            </p>
-            <p key="p3"><a>了解更多</a></p>
-          </QueueAnim>
+          <TweenOne
+                animation={{ y: '-=30', opacity: 0, type: 'from' }}
+                key="text"
+                reverseDelay={300}
+                className={`${props.className}-text`}
+              >
+              <h3 key="h3"><span>Magic on ice Show </span><br/>Magic on ice 表演团</h3>
+              <p key="p1">由世界冠军佟健领衔，成员包括多位全国冠军等前国家队选手及教练，并且吸纳优秀学员及花样滑冰爱好者加入表演团，致力于打造体验式驻场演出、剧目形式演出、晚会形式演出。</p>
+              <p key="p2">
+                <span>•</span>体验式驻场演出：体验式的驻场，以娱乐体验为主；<br/>
+                <span>•</span>剧目形式演出：市场需求驱动，进行商业巡回演出；<br/>
+                <span>•</span>晚会形式演出：展示中国文化，宣传2022全球巡演。
+              </p>
+              <p key="p3"><a>了解更多</a></p>
+            </TweenOne>
         </OverPack>
       </div>
     );

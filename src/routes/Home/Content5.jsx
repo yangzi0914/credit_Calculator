@@ -1,5 +1,4 @@
 import React from 'react';
-import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import champion from '../../assets/champion.png';
@@ -22,18 +21,17 @@ class Content extends React.Component {
           className={`content-template ${props.className}`}
           location={props.id}
         >
-          <QueueAnim
-            className={`${props.className}-text`}
-            type="top"
-            key="text"
-            leaveReverse
-            ease={['easeOutCubic', 'easeInCubic']}
-            id={`${props.id}-textWrapper`}
-          >
-            <img key="img" src={champion} />
-            <h3 key="h3">世界冠军</h3>
-            <p key="p1">庞清、佟健</p>
-          </QueueAnim>
+          <TweenOne
+              key="text"
+              animation={{ y: '-=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }}
+              className={`${props.className}-text`}
+              reverseDelay={300}
+            >
+              {isMode ? undefined : (<div style={{height: '120px'}}></div>)}
+              <img key="img" src={champion} />
+              <h3 key="h3">世界冠军</h3>
+              <p key="p1">庞清、佟健</p>
+          </TweenOne>
         </OverPack>
       </div>
     );
