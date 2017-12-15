@@ -55,6 +55,7 @@ class Content extends React.Component {
               animation={{ x: `-=${this.state.typeIdx + 30}`, opacity: 0, type: 'from', ease: 'easeOutQuad' }}
               className={`${props.className}-img ${this.state.typeIdx == 0 ? 'one' : ''}`}
               updateReStart
+              resetStyleBool
               reverseDelay={300}
             >
               <img src={type[this.state.typeIdx]} />
