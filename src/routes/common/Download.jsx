@@ -24,7 +24,6 @@ class Download extends React.Component {
 
   render() {
     const props = { ...this.props };
-    // const isMode = props.isMode;
     delete props.isMode;
 
     return (<OverPack
