@@ -20,10 +20,12 @@ class Content extends React.Component {
 
   render() {
     const props = { ...this.props };
+    const isMode = props.isMode;
     delete props.isMode;
-    // const oneAnim = { y: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' };
+    const animType = (isMode ? { y: '-=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }
+        : { x: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' })
     const type = [newMedia_web, newMedia_sina, newMedia_wechat, newMedia_app];
-    const children = ['爱滑冰网站', '爱滑冰官博', '爱滑冰 App', '爱滑冰微信公众号'].map((item, index) => {
+    const children = ['爱滑冰网站', '官方微博', '微信公众号', 'APP'].map((item, index) => {
       return (<li key={index}
       style={{opacity: `${this.state.typeIdx == index ? '.8' : '.6' }`}}
         onMouseOver={() => {
@@ -49,7 +51,7 @@ class Content extends React.Component {
             <p key="p1">依托爱滑冰微信服务号及爱滑冰 app ，搭建最专业的花样滑冰项目新媒体平台，普及冰上运动相关资讯、知识与文化，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。</p>
             <p key="p2"><a>了解更多</a></p>
           </TweenOne>
-          <div key="div">
+          <div key="div" style={{position: 'relative'}}>
             <TweenOne
               key="img1"
               animation={{ x: `-=${this.state.typeIdx + 30}`, opacity: 0, type: 'from', ease: 'easeOutQuad' }}
@@ -62,7 +64,7 @@ class Content extends React.Component {
             </TweenOne>
             <TweenOne
               key="text2"
-              animation={{ x: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }}
+              animation={animType}
               className={`${props.className}-rightText`}
               id={`${props.id}-imgWrapper`}
               reverseDelay={300}
