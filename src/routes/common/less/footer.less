@@ -23,7 +23,8 @@
       margin-bottom: 7px;
       line-height: 160px;
       font-size: 24px;
-      .footer-pcul{
+      overflow: hidden;
+      .footer-ul{
         height: 84px;
         padding: 24px 0 38px;
         line-height: 22px;
@@ -85,74 +86,63 @@
     letter-spacing: 4px;
     margin: 44px auto 0 !important;
   }
-  // &-text {
-  //   width: 300px;
-  //   position: absolute;
-  //   left: 4%;
-  //   top: 50px;
-  // }
-  // &-img {
-  //   height: 100%;
-  //   width: 100px;
-  //   position: absolute;
-  //   right: 4%;
-  //   span {
-  //     display: block;
-  //     text-align: right;
-  //     line-height: 160px;
-  //     height: 160px;
-  //     img {
-  //       vertical-align: middle;
-  //       width: 70px;
-  //     }
-  //   }
-  // }
 }
 
 @media screen and (max-width: 767px) {
   .@{footer} {
-    height: 220px;
-    &-text {
-      width: 82%;
-      left: 10%;
-      top: 15px;
-      > p {
+    &-wrapper {
+      height: 720px;
+    }
+    &-content {
+      width: 100%;
+      height: 220px;
+      padding-top: 30px;
+      &:first-of-type {
+        padding-top: 50px;
+      }
+      &:nth-of-type(2) {
+        .footer_div {
+          height: 117px;
+          line-height: 117px;
+        }
+      }
+      &:nth-of-type(3) {
+        height: 174px;
+        .footer_div {
+          height: 66px;
+          line-height: 66px;
+        }
+      }
+      .footer_h5 {
         font-size: 13px;
       }
-      .footer-h5{
-        // height: 103px;
-        height: auto;
-        margin: 13px auto 15px;
-        li {
-          display: inline-block;
-          width: 32%;
-          margin-right: 8%;
-          p {
-            margin-bottom: 8px;
-            text-align: center;
-          }
-          img {
-            width: 100%;
+      .footer_div {
+        height: 110px;
+        .footer-ul{
+          padding: 16px 0 20px;
+          height: 62px;
+          li {
+            height: 26px;
           }
         }
+        p {
+          font-size: 13px;
+          line-height: 20px;
+        }
+      }
+      .footer_p {
+        font-size: 13px;
+      }
+      &:nth-of-type(n+2)::before {
+        left: 50%;
+        top: 0;
+        height: 1px;
+        width: 88px;
+        margin-left: -44px;
       }
     }
-    &-img {
-      height: 100%;
-      width: 16%;
-      position: absolute;
-      right: 10%;
-      span {
-        display: block;
-        text-align: right;
-        width: 100%;
-        height: auto;
-        line-height: normal;
-        margin-top: 100px;
-        img {
-          width: 100%;
-        }
-      }
+    &-text {
+      margin-top: 0 !important;
     }
   }
 }
