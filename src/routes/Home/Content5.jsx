@@ -27,7 +27,7 @@ class Content extends React.Component {
               className={`${props.className}-text`}
               reverseDelay={300}
             >
-              {isMode ? undefined : (<div style={{height: '120px'}}></div>)}
+              <div style={{height: `${isMode ? '60px' : '120px'}`}}></div>
               <img key="img" src={champion} />
               <h3 key="h3">世界冠军</h3>
               <p key="p1">庞清、佟健</p>
