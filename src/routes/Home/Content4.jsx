@@ -24,11 +24,16 @@ class Content extends React.Component {
     delete props.isMode;
     const animType = (isMode ? { y: '-=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }
         : { x: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' })
-    const type = [newMedia_web, newMedia_sina, newMedia_wechat, newMedia_app];
+    // const type = [newMedia_web, newMedia_sina, newMedia_wechat, newMedia_app];
     const children = ['爱滑冰网站', '官方微博', '微信公众号', 'APP'].map((item, index) => {
       return (<li key={index}
       style={{opacity: `${this.state.typeIdx == index ? '.8' : '.6' }`}}
         onMouseOver={() => {
+          this.setState({
+            typeIdx: index,
+          });
+        }}
+        onClick={() => {
           this.setState({
             typeIdx: index,
           });
@@ -60,7 +65,10 @@ class Content extends React.Component {
               resetStyleBool
               reverseDelay={300}
             >
-              <img src={type[this.state.typeIdx]} />
+              <img src={newMedia_web} style={{display: `${this.state.typeIdx == 0 ? 'inline' : 'none'}`}} />
+              <img src={newMedia_sina} style={{display: `${this.state.typeIdx == 1 ? 'inline' : 'none'}`}} />
+              <img src={newMedia_wechat} style={{display: `${this.state.typeIdx ==2 ? 'inline' : 'none'}`}} />
+              <img src={newMedia_app} style={{display: `${this.state.typeIdx == 3 ? 'inline' : 'none'}`}} />
             </TweenOne>
             <TweenOne
               key="text2"
