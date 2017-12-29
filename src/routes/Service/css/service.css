@@ -1,0 +1,87 @@
+.width {
+  width: 75%;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 62px;
+}
+
+.service_menu {
+  float: left;
+  width: 20%;
+}
+
+.service_main {
+  float: right;
+  width: 70%;
+  color: #212121;
+  font-family: PingFangSC-Medium;
+}
+
+.service_h3 {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 32px;
+}
+
+.service_h4 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.service_content {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.service_content img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* menu样式 */
+.ant-menu-inline {
+  border-right: none;
+}
+
+.ant-menu-inline .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-item {
+  font-size: 14px;
+  color: #212121;
+  padding-left: 8px;
+}
+
+.ant-menu-inline .ant-menu-submenu-title:after {
+  content: '';
+}
+
+.ant-menu-inline .ant-menu-item:after {
+  border: none;
+}
+
+.ant-menu-inline .ant-menu-submenu-open .ant-menu-submenu-title {
+  color: #075498;
+  position: relative;
+}
+.ant-menu-inline .ant-menu-submenu-open .ant-menu-submenu-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  vertical-align: middle;
+  background: #075498;
+  position: absolute;
+  top: 13px;
+  left: 12px;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: none;
+  color: #075498;
+}
+
+@media screen and (max-width: 767px) {
+  
+}
