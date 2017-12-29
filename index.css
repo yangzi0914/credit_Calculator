@@ -4292,6 +4292,9 @@ h4 {
   padding-top: 110px;
   margin-right: 20%;
 }
+.content2-rightText li {
+  cursor: pointer;
+}
 @media screen and (max-width: 767px) {
   .content2-wrapper {
     height: 626px;
