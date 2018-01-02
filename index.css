@@ -4646,6 +4646,7 @@ h4 {
 .service_main {
   float: right;
   width: 70%;
+  min-height: 78vh;
   margin-bottom: 30px;
   color: #212121;
   font-family: PingFangSC-Medium;
