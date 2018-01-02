@@ -7,14 +7,22 @@
 
 .service_menu {
   float: left;
-  width: 20%;
+  width: 16%;
+  margin-bottom: 50px;
+  /* position: fixed; */
 }
 
 .service_main {
   float: right;
   width: 70%;
+  margin-bottom: 30px;
   color: #212121;
   font-family: PingFangSC-Medium;
+  display: none;
+}
+
+.service_main_selected {
+  display: block;
 }
 
 .service_h3 {
@@ -43,7 +51,11 @@
 
 /* menu样式 */
 .ant-menu-inline {
+  /* width: 100%; */
+  /* height: auto; */
   border-right: none;
+  /* position: fixed; */
+
 }
 
 .ant-menu-inline .ant-menu-submenu-title,

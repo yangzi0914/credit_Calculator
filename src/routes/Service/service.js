@@ -15,7 +15,9 @@ export default class Company extends React.Component {
     super(props);
     this.state = {
       isMode: false,
-      openKeys: ['sub1'],
+      openKeys: [props.location.state ? props.location.state.type : 'sub1'],
+      flag: true,
+      selectedKey: `${props.location.state ? props.location.state.type : 'sub1'}-1`,
     };
   }
 
@@ -27,15 +29,31 @@ export default class Company extends React.Component {
   }
 
   onOpenChange = (openKeys) => {
+    console.log(openKeys[openKeys.length - 1]);
+    if (openKeys[openKeys.length - 1] === 'sub2') {
+      this.setState({
+        selectedKey: 'sub2-1',
+      });
+    }
     const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
     if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
       this.setState({ openKeys });
     } else {
       this.setState({
         openKeys: latestOpenKey ? [latestOpenKey] : [],
+        // selectedKey: latestOpenKey ? `${latestOpenKey}-1` : '',
       });
     }
   }
+
+  onSelect = (selectKey) => {
+    console.log(selectKey);
+    this.setState({
+      selectedKey: selectKey.key,
+    });
+    console.log(this.state.selectedKey);
+  }
+
   rootSubmenuKeys = ['sub1', 'sub2', 'sub3'];
 
   enquireScreen = (cb) => {
@@ -60,24 +78,28 @@ export default class Company extends React.Component {
             <Menu
               mode="inline"
               openKeys={this.state.openKeys}
+              // selectedKeys={this.state.selectedKeys}
               onOpenChange={this.onOpenChange}
+              onSelect={this.onSelect}
+              defaultOpenKeys={[this.props.location.state ? this.props.location.state.type : 'sub1']}
+              defaultSelectedKeys={[`${this.props.location.state ? this.props.location.state.type : 'sub1'}-1`]}
             >
               <SubMenu key="sub1" title={<span><span>冰上中心</span></span>}>
-                <Menu.Item key="1">专业培训</Menu.Item>
-                <Menu.Item key="2">企业活动</Menu.Item>
-                <Menu.Item key="3">公关活动</Menu.Item>
-                <Menu.Item key="4">展览展示</Menu.Item>
-                <Menu.Item key="5">展览展示</Menu.Item>
+                <Menu.Item key="sub1-1">专业培训</Menu.Item>
+                <Menu.Item key="sub1-2">企业活动</Menu.Item>
+                <Menu.Item key="sub1-3">公关活动</Menu.Item>
+                <Menu.Item key="sub1-4">展览展示</Menu.Item>
+                <Menu.Item key="sub1-5">拍摄</Menu.Item>
               </SubMenu>
               <SubMenu key="sub2" title={<span><span>Magic On Ice</span></span>} />
               <SubMenu key="sub3" title={<span><span>新媒体</span></span>}>
-                <Menu.Item key="6">新浪微博</Menu.Item>
-                <Menu.Item key="7">微信平台</Menu.Item>
-                <Menu.Item key="8">App</Menu.Item>
+                <Menu.Item key="sub3-1">新浪微博</Menu.Item>
+                <Menu.Item key="sub3-2">微信平台</Menu.Item>
+                <Menu.Item key="sub3-3">App</Menu.Item>
               </SubMenu>
             </Menu>
           </div>
-          <div className="service_main">
+          <div className={`service_main ${this.state.selectedKey === 'sub1-1' ? 'service_main_selected' : ''}`} >
             <h3 className="service_h3">PT 冰上中心</h3>
             <h4 className="service_h4">专业培训</h4>
             <p className="service_content">翼翔冰雪® 由花样滑冰世界冠军佟健先生于 2015 年 7 月创办，经过近 2 年的发展，依托庞清佟健冰上中心为基地，现已形成了由体育 + 教育、体育 + 文化和新媒体构成的全面的冰雪运动服务平台。</p>
@@ -88,6 +110,54 @@ export default class Company extends React.Component {
             <p className="service_content">
               <img alt="123" src={artCenter1} key="img1" />
             </p>
+          </div>
+          <div className={`service_main ${this.state.selectedKey === 'sub1-2' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">PT 冰上中心</h3>
+            <h4 className="service_h4">企业活动</h4>
+            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
+            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
+            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
+            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
+            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
+          </div>
+          <div className={`service_main ${this.state.selectedKey === 'sub1-3' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">PT 冰上中心</h3>
+            <h4 className="service_h4">公关活动</h4>
+            <p className="service_content">公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动</p>
+          </div>
+          <div className={`service_main ${this.state.selectedKey === 'sub1-4' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">PT 冰上中心</h3>
+            <h4 className="service_h4">展览展示</h4>
+            <p className="service_content">展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示</p>
+            <p className="service_content">展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示</p>
+            <p className="service_content">展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示</p>
+          </div>
+          <div className={`service_main ${this.state.selectedKey === 'sub1-5' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">PT 冰上中心</h3>
+            <h4 className="service_h4">拍摄</h4>
+            <p className="service_content">拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄</p>
+          </div>
+          <div className={`service_main ${this.state.selectedKey === 'sub2-1' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">Magic On Ice</h3>
+            <p className="service_content">Magic On Ice Magic On Ice公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动</p>
+          </div>
+          <div className={`service_main ${this.state.selectedKey === 'sub3-1' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">新媒体</h3>
+            <h4 className="service_h4">新浪微博</h4>
+            <p className="service_content">新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博</p>
+            <p className="service_content">新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博</p>
+          </div>
+          <div className={`service_main ${this.state.selectedKey === 'sub3-2' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">新媒体</h3>
+            <h4 className="service_h4">微信平台</h4>
+            <p className="service_content">微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台</p>
+            <p className="service_content">微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台</p>
+          </div>
+          <div className={`service_main ${this.state.selectedKey === 'sub3-3' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">新媒体</h3>
+            <h4 className="service_h4">App</h4>
+            <p className="service_content">AppAppAppAppAppApp微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台</p>
+            <p className="service_content">AppAppAppAppApp微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台</p>
           </div>
         </div>
         <div key="clearfix" className="clearfix" />

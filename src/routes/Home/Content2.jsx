@@ -1,6 +1,7 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
+import { Link } from 'dva/router';
 import perform1 from '../../assets/perform1.png';
 import perform2 from '../../assets/perform2.png';
 
@@ -62,7 +63,7 @@ class Content extends React.Component {
                 <span>•</span>剧目形式演出：市场需求驱动，进行商业巡回演出；<br/>
                 <span>•</span>晚会形式演出：展示中国文化，宣传2022全球巡演。
               </p>
-              <p key="p3"><a>了解更多</a></p>
+              <p key="p3"><Link to={{ pathname: '/service', state: {type: 'sub2'} }}>了解更多</Link></p>
             </TweenOne>
         </OverPack>
       </div>
