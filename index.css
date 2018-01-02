@@ -4629,7 +4629,7 @@ h4 {
     text-align: left;
   }
 }
-.width {
+.serviceWidth {
   width: 75%;
   max-width: 800px;
   margin: auto;
@@ -4727,5 +4727,12 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
-  
+  .serviceWidth {
+    width: 90%;
+  }
+  .service_menu,
+  .service_main {
+    width: 100%;
+    float: none;
+  }
 }
