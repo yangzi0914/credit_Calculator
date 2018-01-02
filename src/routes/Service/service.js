@@ -73,7 +73,7 @@ export default class Company extends React.Component {
     return (
       <div>
         <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode} selectedKeys="1" />
-        <div className="width">
+        <div className="serviceWidth">
           <div className="service_menu">
             <Menu
               mode="inline"
