@@ -34,13 +34,15 @@ class Header extends React.Component {
       animation={{ opacity: 0, type: 'from' }}
       {...props}
       className={`${props.className} ${selectedKeys == '0' ? '' : 'white rel'}`}
-    >
-      <TweenOne
-        className={`${this.props.className}-logo`}
-        animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
-        id={`${this.props.id}-logo`}
-      >
-      </TweenOne>
+    > 
+      <Link to='/'>
+        <TweenOne
+          className={`${this.props.className}-logo`}
+          animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
+          id={`${this.props.id}-logo`}
+        >
+        </TweenOne>
+      </Link>
       {isMode ? (<div
         className={`${this.props.className}-phone-nav${this.state.phoneOpen ? ' open' : ''}`}
         id={`${this.props.id}-menu`}

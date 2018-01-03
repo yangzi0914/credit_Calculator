@@ -28,7 +28,7 @@ class Content extends React.Component {
     // const type = [newMedia_web, newMedia_sina, newMedia_wechat, newMedia_app];
     const children = ['爱滑冰网站', '官方微博', '微信公众号', 'APP'].map((item, index) => {
       return (<li key={index}
-      style={{opacity: `${this.state.typeIdx == index ? '.8' : '.6' }`}}
+      style={{opacity: `${this.state.typeIdx == index ? '.8' : '.6' }`, fontWeight: `${this.state.typeIdx == index ? 'bold' : 'normal' }`}}
         onMouseOver={() => {
           this.setState({
             typeIdx: index,
