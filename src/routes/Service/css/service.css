@@ -40,6 +40,7 @@
 
 .service_content {
   font-family: PingFangSC-Regular;
+  text-align: justify;
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 24px;
@@ -99,9 +100,32 @@
   .serviceWidth {
     width: 90%;
   }
+
   .service_menu,
   .service_main {
     width: 100%;
     float: none;
+  }
+
+  .service_h3 {
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 30px;
+  }
+  
+  .service_h4 {
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+  
+  .service_content {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .ant-menu-inline .ant-menu-submenu-title, .ant-menu-inline .ant-menu-item {
+    font-size: 15px;
   }
 }
