@@ -4065,7 +4065,6 @@ h4 {
 .content7-main h3 {
   font-family: SourceHanSerifSC-Bold;
   font-size: 32px;
-  opacity: 0.8;
   line-height: 38px;
 }
 .content7-main h3 span {
@@ -4122,7 +4121,6 @@ h4 {
   }
   .content7-main h3 {
     font-size: 22px;
-    opacity: 0.9;
     line-height: 28px;
   }
   .content7-main h3 span {
@@ -4168,7 +4166,6 @@ h4 {
 .content0-text h3 {
   font-family: SourceHanSerifSC-Bold;
   font-size: 32px;
-  opacity: 0.8 !important;
   line-height: 38px;
 }
 .content0-text h3 span {
@@ -4213,7 +4210,6 @@ h4 {
   }
   .content0-text h3 {
     font-size: 22px;
-    opacity: 0.9 !important;
     line-height: 28px;
   }
   .content0-text h3 span {
@@ -4247,7 +4243,6 @@ h4 {
 .content2-text h3 {
   font-family: SourceHanSerifSC-Bold;
   font-size: 32px;
-  opacity: 0.8 !important;
   line-height: 38px;
 }
 .content2-text p {
@@ -4375,7 +4370,6 @@ h4 {
 .content3-text h3 {
   font-family: SourceHanSerifSC-Bold;
   font-size: 32px;
-  opacity: 0.8 !important;
   line-height: 38px;
 }
 .content3-text p {
@@ -4395,7 +4389,6 @@ h4 {
   }
   .content3-text h3 {
     font-size: 22px;
-    opacity: 0.9 !important;
     line-height: 32px;
   }
   .content3-text p {
@@ -4593,7 +4586,7 @@ h4 {
 }
 
 .company_title {
-  font-size: 26px;
+  font-size: 28px;
   margin: 56px auto 40px;
   text-align: left;
 }
