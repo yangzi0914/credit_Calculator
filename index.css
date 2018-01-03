@@ -4602,7 +4602,7 @@ h4 {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 28px;
-  text-align: left;
+  text-align: justify;
 }
 
 @media screen and (max-width: 767px) {
@@ -4626,7 +4626,6 @@ h4 {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 38px;
-    text-align: left;
   }
 }
 .serviceWidth {
@@ -4671,6 +4670,7 @@ h4 {
 
 .service_content {
   font-family: PingFangSC-Regular;
+  text-align: justify;
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 24px;
@@ -4729,10 +4729,34 @@ h4 {
 @media screen and (max-width: 767px) {
   .serviceWidth {
     width: 90%;
+    padding-top: 29px;
   }
+
   .service_menu,
   .service_main {
     width: 100%;
     float: none;
+  }
+
+  .service_h3 {
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 30px;
+  }
+  
+  .service_h4 {
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+  
+  .service_content {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .ant-menu-inline .ant-menu-submenu-title, .ant-menu-inline .ant-menu-item {
+    font-size: 15px;
   }
 }
