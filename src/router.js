@@ -6,7 +6,12 @@ import Home from './routes/Home';
 import Company from './routes/Company/company';
 import Service from './routes/Service/service';
 
+const window = require('global/window');
+
 function RouterConfig({ history }) {
+  history.listen(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <Router history={history}>
       <Switch>

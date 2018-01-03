@@ -2,7 +2,7 @@
   height: 480px;
   background: url('../../../assets/company_banner.png') no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
 }
 
 .width{
@@ -32,8 +32,8 @@
 @media screen and (max-width: 767px) {
   .company_banner{
     height: 210px;
-    background: url('../../../assets/company_banner_phone.png') no-repeat;
-    background-size: 100%;
+    /* background: url('../../../assets/company_banner_phone.png') no-repeat; */
+    /* background-size: 100%; */
   }
 
   .company_main{
