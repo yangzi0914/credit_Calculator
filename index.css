@@ -4576,9 +4576,9 @@ h4 {
 }
 .company_banner{
   height: 480px;
-  background: url(./static/company_banner.3208b927.png) no-repeat;
+  background: url(./static/company_banner.d4fa3c46.png) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
 }
 
 .width{
@@ -4608,8 +4608,8 @@ h4 {
 @media screen and (max-width: 767px) {
   .company_banner{
     height: 210px;
-    background: url(./static/company_banner_phone.5679c312.png) no-repeat;
-    background-size: 100%;
+    /* background: url('../../../assets/company_banner_phone.png') no-repeat; */
+    /* background-size: 100%; */
   }
 
   .company_main{
