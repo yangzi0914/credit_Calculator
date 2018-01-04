@@ -29,11 +29,6 @@ export default class Company extends React.Component {
   }
 
   onOpenChange = (openKeys) => {
-    if (openKeys[openKeys.length - 1] === 'sub2') {
-      this.setState({
-        selectedKeys: ['sub2-1'],
-      });
-    }
     const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
     if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
       this.setState({ openKeys });
