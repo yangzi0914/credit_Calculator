@@ -21,6 +21,15 @@ export default class Home extends React.Component {
       isMode: false,
       white: false
     };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentWillMount() {
+    window.removeEventListener('scroll', this.handleScroll, true);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll, true);
   }
 
   componentDidMount() {
@@ -28,11 +37,12 @@ export default class Home extends React.Component {
     this.enquireScreen((isMode) => {
       this.setState({ isMode });
     });
+    window.addEventListener('scroll', this.handleScroll, true);
+  }
 
-    window.addEventListener('scroll', () => {
-      var top = document.body.scrollTop || document.documentElement.scrollTop
-      top > (document.body.clientHeight - 40) ? this.setState({ white: true }) : this.setState({ white: false });
-    })
+  handleScroll() {
+    var top = document.body.scrollTop || document.documentElement.scrollTop;
+    top > (document.body.clientHeight - 40) ? this.setState({ white: true }) : this.setState({ white: false });
   }
 
   enquireScreen = (cb) => {
