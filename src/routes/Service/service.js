@@ -94,8 +94,7 @@ export default class Company extends React.Component {
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub1-1' ? 'service_main_selected' : ''}`} >
             <h3 className="service_h3">PT 冰上中心</h3>
             <h4 className="service_h4">专业培训</h4>
-            <p className="service_content">高端培训：庞清佟健冰上艺术中心旨在提供高端优质的花样滑冰课程培训，由国际顶级选手和前国家队选手亲情打造体系化教学。每位学员均将得到国家级高水平教练的指导，同时提供舞蹈课、礼仪课、体能课程等，满足学员各方面的需求，为学员提供最专业最高端的体系化培训服务。</p>
-            <p className="service_content">与总局合作培训行业专业人才；为行业发展培养人才，为未来冰雪发展夯实基础。</p>
+            <p className="service_content">高端培训：庞清佟健冰上艺术中心旨在提供高端优质的花样滑冰课程培训，由国际顶级选手和前国家队选手亲情打造体系化教学。每位学员均将得到国家级高水平教练的指导，同时提供舞蹈课、礼仪课、体能课程等，满足学员各方面的需求，为学员提供最专业最高端的体系化培训服务。与总局合作培训行业专业人才；为行业发展培养人才，为未来冰雪发展夯实基础。</p>
             <p className="service_content">校园培训：为助力冰雪运动进校园，共筑冰雪强国梦，庞清佟健冰上艺术中心会定期走进校园开办冰雪知识讲堂。同时已为校园冰雪发展提供成套的教学体系，从多媒体教学到校内基础训练，从冰上体验到人员选拔，从校队建立到参赛比拼等。希望通过体教结合的方式，让更多孩子喜欢冰雪，爱上冰雪，希望能帮助更多的青少年实现属于他们的冰雪梦想。</p>
             {/* <p className="service_content">
               <img alt="123" src={artCenter1} key="img1" />
