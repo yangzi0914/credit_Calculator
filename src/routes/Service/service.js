@@ -7,7 +7,7 @@ import Nav from './../common/Nav';
 import Footer from './../common/Footer';
 import Download from './../common/Download';
 
-import artCenter1 from '../../assets/artCenter2.png';
+// import artCenter1 from '../../assets/artCenter2.png';
 
 const SubMenu = Menu.SubMenu;
 export default class Company extends React.Component {
@@ -94,62 +94,51 @@ export default class Company extends React.Component {
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub1-1' ? 'service_main_selected' : ''}`} >
             <h3 className="service_h3">PT 冰上中心</h3>
             <h4 className="service_h4">专业培训</h4>
-            <p className="service_content">翼翔冰雪® 由花样滑冰世界冠军佟健先生于 2015 年 7 月创办，经过近 2 年的发展，依托庞清佟健冰上中心为基地，现已形成了由体育 + 教育、体育 + 文化和新媒体构成的全面的冰雪运动服务平台。</p>
-            <p className="service_content">佟健与庞清搭档曾获得 2010 年温哥华冬奥会双人银牌，2006 年和 2010 年两届世界花样滑冰锦标赛双人冠军，并在 2014 年索契冬奥会上担任中国代表团开幕式旗手，从事花样滑冰事业三十余年，有辉煌也有坎坷，但不悔用冰刀刻写深情与坚持，退役后创办翼翔冰雪，用真心、用真情推广冰雪项目。</p>
-            <p className="service_content">庞清佟健冰上中心目前拥有教练员十余名，均为前国家队运动员或教练员，拥有全国最顶尖的教练员资源，旨在开展花样滑冰单双人及队列滑优质高端培训，拓展花样滑冰人群基础。</p>
-            <p className="service_content">同时打造爱滑冰表演团队，立志于将花样滑冰与中国文化相结合，打造具有中国特色的冰上舞台剧，更广泛的推广花样滑冰项目，宣扬中国文化。</p>
-            <p className="service_content">此外，翼翔冰雪®在佟健先生的带领下用实际行动回馈大众，每月举办一次爱滑冰®公益课，现已成功举办26 场，并承诺爱滑冰®公益课将一直服务大众直到 2022 年北京冬奥会。而且积极响应国家号召推动冰雪进校园活动，已在 10 余所学校开展 “冰雪知识讲座”，并于 2016 年 11 月携手清华附中打造国内首例大型校园冰上剧，用全新的推广方式在校园播下冰雪种子，引领校园冰雪发展，把冰雪进校园落到实处。</p>
-            <p className="service_content">
+            <p className="service_content">高端培训：庞清佟健冰上艺术中心旨在提供高端优质的花样滑冰课程培训，由国际顶级选手和前国家队选手亲情打造体系化教学。每位学员均将得到国家级高水平教练的指导，同时提供舞蹈课、礼仪课、体能课程等，满足学员各方面的需求，为学员提供最专业最高端的体系化培训服务。</p>
+            <p className="service_content">与总局合作培训行业专业人才；为行业发展培养人才，为未来冰雪发展夯实基础。</p>
+            <p className="service_content">校园培训：为助力冰雪运动进校园，共筑冰雪强国梦，庞清佟健冰上艺术中心会定期走进校园开办冰雪知识讲堂。同时已为校园冰雪发展提供成套的教学体系，从多媒体教学到校内基础训练，从冰上体验到人员选拔，从校队建立到参赛比拼等。希望通过体教结合的方式，让更多孩子喜欢冰雪，爱上冰雪，希望能帮助更多的青少年实现属于他们的冰雪梦想。</p>
+            {/* <p className="service_content">
               <img alt="123" src={artCenter1} key="img1" />
-            </p>
+            </p> */}
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub1-2' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">PT 冰上中心</h3>
             <h4 className="service_h4">企业活动</h4>
-            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
-            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
-            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
-            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
-            <p className="service_content">企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动企业活动</p>
+            <p className="service_content">庞清佟健冰上艺术中心，特有的冰场+空间+休闲+餐饮⼀应俱全，一站式服务能适用于多样的企业活动。无论是提高团队凝聚力的团建活动，还是需使用高端会场以先发制人的新品发布会活动，亦或是需要高级别专业配套服务的行业论坛活动，我们都能以最优质的服务全⽅位满⾜您的各式需求。</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub1-3' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">PT 冰上中心</h3>
             <h4 className="service_h4">公关活动</h4>
-            <p className="service_content">公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动</p>
+            <p className="service_content">庞清佟健冰上艺术中心配套设施服务完备，适合媒体或企业进行公关活动。冰上艺术中心成熟的商业模式可提供多种商业合作方式，而爱滑冰®自有新媒体完善的运行机制也为公关活动保驾护航。</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub1-4' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">PT 冰上中心</h3>
             <h4 className="service_h4">展览展示</h4>
-            <p className="service_content">展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示</p>
-            <p className="service_content">展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示</p>
-            <p className="service_content">展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示展览展示</p>
+            <p className="service_content">庞清佟健冰上艺术中心完善的配套设施加专业的管理服务，以简洁现代的装修风格为产品展示活动提供别具一格的活动场所。冰上艺术中心集高端、优雅、品质、专业为一身，是您开办展览活动的不二之选。</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub1-5' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">PT 冰上中心</h3>
             <h4 className="service_h4">拍摄</h4>
-            <p className="service_content">拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄拍摄</p>
+            <p className="service_content">庞清佟健冰上艺术中心是亚洲单体面积最大的冰上艺术中心，陆地与冰上区域占地7000平方米，精致的装潢与专业的冰场为广告拍摄、影视拍摄等活动提供独特而优质的拍摄条件。专业的配套服务为您的拍摄过程提供全程最舒适最省心的环境。</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub2-1' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">Magic On Ice</h3>
-            <p className="service_content">Magic On Ice Magic On Ice公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动公关活动</p>
+            <p className="service_content">Magic On Ice是由世界冠军庞清佟健领衔主演，前国家队队员参演的首个“On Ice”系列冰演。在选派强大阵容的同时还吸纳优秀学员及花样滑冰爱好者加入表演团，致力于打造体验式驻场演出、晚会形式演出、剧目形式演出，为大众提供零距离接触花样滑冰的平台，通过精彩纷呈的节目和丰富有趣的活动让大众感受到花滑之美与花滑之魅力。</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-1' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">新浪微博</h4>
-            <p className="service_content">新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博</p>
-            <p className="service_content">新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博新浪微博</p>
+            <p className="service_content">爱滑冰®新浪微博专注于赛事资讯和爱滑冰®活动新闻等内容，为冰迷提供最丰富最及时的花样滑冰新动态，开放的平台为广大冰迷搭建了交流学习的空间。</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-2' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">微信平台</h4>
-            <p className="service_content">微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台</p>
-            <p className="service_content">微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台</p>
+            <p className="service_content">专业的花样滑冰新媒体平台，主要发布爱滑冰®的活动资讯，同时提供花滑近期资讯，行业动态，赛事信息，人物介绍，项目科普等内容。用美妙的软文承载更多爱滑冰的心。</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-3' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">App</h4>
-            <p className="service_content">AppAppAppAppAppApp微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台</p>
-            <p className="service_content">AppAppAppAppApp微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台微信平台</p>
+            <p className="service_content">国内首个花样滑冰专业APP，提供资讯、教学、社交等多项服务，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。为庞清佟健冰上艺术中心的学员提供俱乐部信息渠道，同时也为大众提供花滑资讯、独家教学视频和约课约滑社交平台。</p>
           </div>
         </div>
         <div key="clearfix" className="clearfix" />
