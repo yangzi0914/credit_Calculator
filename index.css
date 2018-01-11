@@ -4669,9 +4669,24 @@ h4 {
   margin-bottom: 24px;
 }
 
+.service_center{
+  text-align: center;
+}
+
 .service_content img {
   max-width: 100%;
   vertical-align: middle;
+}
+
+.service_content img.serviceQR {
+  width: 126px;
+  margin-top: 78px;
+}
+
+.QR_name {
+  color: #108EE9;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 /* menu样式 */
