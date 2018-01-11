@@ -126,6 +126,7 @@ export default class Company extends React.Component {
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">新浪微博</h4>
             <p className="service_content">爱滑冰®新浪微博专注于赛事资讯和爱滑冰®活动新闻等内容，为冰迷提供最丰富最及时的花样滑冰新动态，开放的平台为广大冰迷搭建了交流学习的空间。</p>
+            <p className="service_content">爱滑冰官博链接：<a href="https://weibo.com/iskating?is_hot=1#place" target="_blank" rel="noopener noreferrer">https://weibo.com/iskating?is_hot=1#place</a></p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-2' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
