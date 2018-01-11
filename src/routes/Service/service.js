@@ -7,7 +7,8 @@ import Nav from './../common/Nav';
 import Footer from './../common/Footer';
 import Download from './../common/Download';
 
-// import artCenter1 from '../../assets/artCenter2.png';
+import wechatQR from '../../assets/service_wechatQR.png';
+import AppQR from '../../assets/service_AppQR.png';
 
 const SubMenu = Menu.SubMenu;
 export default class Company extends React.Component {
@@ -96,9 +97,6 @@ export default class Company extends React.Component {
             <h4 className="service_h4">专业培训</h4>
             <p className="service_content">高端培训：庞清佟健冰上艺术中心旨在提供高端优质的花样滑冰课程培训，由国际顶级选手和前国家队选手亲情打造体系化教学。每位学员均将得到国家级高水平教练的指导，同时提供舞蹈课、礼仪课、体能课程等，满足学员各方面的需求，为学员提供最专业最高端的体系化培训服务。与总局合作培训行业专业人才；为行业发展培养人才，为未来冰雪发展夯实基础。</p>
             <p className="service_content">校园培训：为助力冰雪运动进校园，共筑冰雪强国梦，庞清佟健冰上艺术中心会定期走进校园开办冰雪知识讲堂。同时已为校园冰雪发展提供成套的教学体系，从多媒体教学到校内基础训练，从冰上体验到人员选拔，从校队建立到参赛比拼等。希望通过体教结合的方式，让更多孩子喜欢冰雪，爱上冰雪，希望能帮助更多的青少年实现属于他们的冰雪梦想。</p>
-            {/* <p className="service_content">
-              <img alt="123" src={artCenter1} key="img1" />
-            </p> */}
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub1-2' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">PT 冰上中心</h3>
@@ -133,11 +131,17 @@ export default class Company extends React.Component {
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">微信平台</h4>
             <p className="service_content">专业的花样滑冰新媒体平台，主要发布爱滑冰®的活动资讯，同时提供花滑近期资讯，行业动态，赛事信息，人物介绍，项目科普等内容。用美妙的软文承载更多爱滑冰的心。</p>
+            <p className="service_content service_center">
+              <img alt="service_wechatQR" className="serviceQR" src={wechatQR} key="img1" /><br /><span className="QR_name">爱滑冰官方微信</span>
+            </p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-3' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">App</h4>
             <p className="service_content">国内首个花样滑冰专业APP，提供资讯、教学、社交等多项服务，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。为庞清佟健冰上艺术中心的学员提供俱乐部信息渠道，同时也为大众提供花滑资讯、独家教学视频和约课约滑社交平台。</p>
+            <p className="service_content service_center">
+              <img alt="service_AppQR" className="serviceQR" src={AppQR} key="img2" /><br /><span className="QR_name">爱滑冰官方App</span>
+            </p>
           </div>
         </div>
         <div key="clearfix" className="clearfix" />
