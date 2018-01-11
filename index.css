@@ -4680,7 +4680,7 @@ h4 {
 
 .service_content img.serviceQR {
   width: 126px;
-  margin-top: 78px;
+  margin: 78px auto 8px;
 }
 
 .QR_name {
