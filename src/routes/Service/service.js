@@ -64,7 +64,7 @@ export default class Company extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="templates-wrapper">
         <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode} selectedKeys="1" />
         <div className="serviceWidth">
           <div className="service_menu">
