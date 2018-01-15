@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "antd": "^2.13.8",
-    "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.9.2",
     "dva": "^2.0.4",
     "enquire": "^0.0.2",
