@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import dva from 'dva';
 import createHistory from 'history/createBrowserHistory';
 import './index.css';
