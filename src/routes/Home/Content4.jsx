@@ -54,7 +54,7 @@ class Content extends React.Component {
             reverseDelay={300}
           >
             <h3 key="h3">新媒体线上平台</h3>
-            <p key="p1">依托爱滑冰微信服务号及爱滑冰 app ，搭建最专业的花样滑冰项目新媒体平台，普及冰上运动相关资讯、知识与文化，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。</p>
+            <p key="p1">依托爱滑冰 app 、爱滑冰官方微博和爱滑冰微信服务号，搭建最专业的花样滑冰项目新媒体平台，普及冰上运动相关知识与文化，为大众提供最新的花样滑冰资讯，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。</p>
             <p key="p2"><Link to={{ pathname: '/service', state: {type: 'sub3'} }}>了解更多</Link></p>
           </TweenOne>
           <div key="div" style={{position: 'relative'}}>
