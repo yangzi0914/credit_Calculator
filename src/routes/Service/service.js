@@ -9,6 +9,13 @@ import Download from './../common/Download';
 
 import wechatQR from '../../assets/service_wechatQR.png';
 import AppQR from '../../assets/service_AppQR.png';
+import serviceMoc1 from '../../assets/service_moc1.jpg';
+import serviceMoc2 from '../../assets/service_moc2.jpg';
+import serviceDoc from '../../assets/service_doc.jpg';
+import serviceZX1 from '../../assets/serviceZX1.png';
+import serviceZX2 from '../../assets/serviceZX2.jpg';
+import serviceZX3 from '../../assets/serviceZX3.jpg';
+import serviceZX4 from '../../assets/serviceZX4.jpg';
 
 const SubMenu = Menu.SubMenu;
 export default class Company extends React.Component {
@@ -47,7 +54,7 @@ export default class Company extends React.Component {
     });
   }
 
-  rootSubmenuKeys = ['sub1', 'sub2', 'sub3'];
+  rootSubmenuKeys = ['sub1', 'sub2', 'sub3', 'sub4'];
 
   enquireScreen = (cb) => {
     /* eslint-disable no-unused-expressions */
@@ -77,18 +84,26 @@ export default class Company extends React.Component {
               defaultOpenKeys={[this.props.location.state ? this.props.location.state.type : 'sub1']}
               defaultSelectedKeys={[`${this.props.location.state ? this.props.location.state.type : 'sub1'}-1`]}
             >
-              <SubMenu key="sub1" title={<span><span>冰上中心</span></span>}>
+              <SubMenu key="sub1" title={<span><span>冰上培训</span></span>}>
                 <Menu.Item key="sub1-1">专业培训</Menu.Item>
                 <Menu.Item key="sub1-2">企业活动</Menu.Item>
                 <Menu.Item key="sub1-3">公关活动</Menu.Item>
                 <Menu.Item key="sub1-4">展览展示</Menu.Item>
                 <Menu.Item key="sub1-5">拍摄</Menu.Item>
               </SubMenu>
-              <SubMenu key="sub2" title={<span><span>Magic On Ice</span></span>} />
+              <SubMenu key="sub2" title={<span><span>冰上表演</span></span>}>
+                <Menu.Item key="sub2-1">Magic On Ice</Menu.Item>
+                <Menu.Item key="sub2-2">Dream on ice</Menu.Item>
+              </SubMenu>
               <SubMenu key="sub3" title={<span><span>新媒体</span></span>}>
-                <Menu.Item key="sub3-1">新浪微博</Menu.Item>
-                <Menu.Item key="sub3-2">微信平台</Menu.Item>
-                <Menu.Item key="sub3-3">App</Menu.Item>
+                <Menu.Item key="sub3-1">关于爱滑冰新媒体</Menu.Item>
+                <Menu.Item key="sub3-2">新浪微博</Menu.Item>
+                <Menu.Item key="sub3-3">微信平台</Menu.Item>
+                <Menu.Item key="sub3-4">App</Menu.Item>
+              </SubMenu>
+              <SubMenu key="sub4" title={<span><span>冰场规划咨询</span></span>}>
+                <Menu.Item key="sub4-1">冰场建设/设计咨询</Menu.Item>
+                <Menu.Item key="sub4-2">冰场管理/运营咨询</Menu.Item>
               </SubMenu>
             </Menu>
           </div>
@@ -119,16 +134,36 @@ export default class Company extends React.Component {
             <p className="service_content">庞清佟健冰上艺术中心是亚洲单体面积最大的冰上艺术中心，陆地与冰上区域占地7000平方米，精致的装潢与专业的冰场为广告拍摄、影视拍摄等活动提供独特而优质的拍摄条件。专业的配套服务为您的拍摄过程提供全程最舒适最省心的环境。</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub2-1' ? 'service_main_selected' : ''}`}>
-            <h3 className="service_h3">Magic On Ice</h3>
-            <p className="service_content">Magic On Ice是由世界冠军庞清佟健领衔主演，前国家队队员参演的首个“On Ice”系列冰演。在选派强大阵容的同时还吸纳优秀学员及花样滑冰爱好者加入表演团，致力于打造体验式驻场演出、晚会形式演出、剧目形式演出，为大众提供零距离接触花样滑冰的平台，通过精彩纷呈的节目和丰富有趣的活动让大众感受到花滑之美与花滑之魅力。</p>
+            <h3 className="service_h3">冰上演出</h3>
+            <h4 className="service_h4">Magic On Ice</h4>
+            <p className="service_content">“Magic On Ice”是庞清佟健冰上艺术中心的首个“On Ice”系列冰演。该项表演是一通过精湛冰上技术令人眼睛为之一亮的的高端商业演出</p>
+            <p className="service_content service_center">
+              <img alt="service_moc1" className="contentImg" src={serviceMoc1} key="img3" />
+            </p>
+            <p className="service_content service_center">
+              <img alt="service_moc2" className="contentImg" src={serviceMoc2} key="img4" />
+            </p>
+          </div>
+          <div className={`service_main ${this.state.selectedKeys[0] === 'sub2-2' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">冰上演出</h3>
+            <h4 className="service_h4">Dream On Ice</h4>
+            <p className="service_content">“Dream On Ice”是庞清佟健冰上艺术中心的第二个“On Ice”系列冰演，是一通过互动体验的冰上亲子剧场，让孩子们可以在冰场上完成梦想</p>
+            <p className="service_content service_center">
+              <img alt="service_doc" className="contentImg" src={serviceDoc} key="img5" />
+            </p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-1' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">新媒体</h3>
+            <h4 className="service_h4">关于爱滑冰新媒体</h4>
+            <p className="service_content">专业的花样滑冰新媒体平台，主要发布爱滑冰®的活动资讯，同时提供花滑近期资讯，行业动态，赛事信息，人物介绍，项目科普等内容。用美妙的软文承载更多爱滑冰的心。</p>
+          </div>
+          <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-2' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">新浪微博</h4>
             <p className="service_content">爱滑冰®新浪微博专注于赛事资讯和爱滑冰®活动新闻等内容，为冰迷提供最丰富最及时的花样滑冰新动态，开放的平台为广大冰迷搭建了交流学习的空间。</p>
             <p className="service_content">爱滑冰官博链接：<a href="https://weibo.com/iskating?is_hot=1#place" target="_blank" rel="noopener noreferrer">https://weibo.com/iskating?is_hot=1#place</a></p>
           </div>
-          <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-2' ? 'service_main_selected' : ''}`}>
+          <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-3' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">微信平台</h4>
             <p className="service_content">专业的花样滑冰新媒体平台，主要发布爱滑冰®的活动资讯，同时提供花滑近期资讯，行业动态，赛事信息，人物介绍，项目科普等内容。用美妙的软文承载更多爱滑冰的心。</p>
@@ -136,12 +171,35 @@ export default class Company extends React.Component {
               <img alt="service_wechatQR" className="serviceQR" src={wechatQR} key="img1" /><br /><span className="QR_name">爱滑冰官方微信</span>
             </p>
           </div>
-          <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-3' ? 'service_main_selected' : ''}`}>
+          <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-4' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">App</h4>
             <p className="service_content">国内首个花样滑冰专业APP，提供资讯、教学、社交等多项服务，为广大冰雪运动爱好者开启体育文化相结合的健康生活方式。为庞清佟健冰上艺术中心的学员提供俱乐部信息渠道，同时也为大众提供花滑资讯、独家教学视频和约课约滑社交平台。</p>
             <p className="service_content service_center">
               <img alt="service_AppQR" className="serviceQR" src={AppQR} key="img2" /><br /><span className="QR_name">爱滑冰官方App</span>
+            </p>
+          </div>
+          <div className={`service_main ${this.state.selectedKeys[0] === 'sub4-1' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">冰场规划咨询</h3>
+            <h4 className="service_h4">冰场建设/设计咨询</h4>
+            <p className="service_content">团队创始人拥有30余年行业辉煌成就，以及无与伦比的海外职业经历，甄选行业优质供应商，在空间规划、建筑结构、制冷、照明等领域，提供专业冰场建置与设计谘询，协助您打造专业冰场</p>
+            <p className="service_content service_center">
+              <img alt="service_ZX" className="contentImg" src={serviceZX1} key="img6" />
+            </p>
+            <p className="service_content service_center">
+              <img alt="service_ZX" className="contentImg" src={serviceZX4} key="img9" />
+            </p>
+          </div>
+          <div className={`service_main ${this.state.selectedKeys[0] === 'sub4-2' ? 'service_main_selected' : ''}`}>
+            <h3 className="service_h3">冰场规划咨询</h3>
+            <h4 className="service_h4">冰场管理/运营咨询</h4>
+            <p className="service_content">团队提供专业冰场运营、维护、教练团队谘询，协助您管理冰场或为您培训专业的冰场运营管理团队</p>
+            <p className="service_content">咨询请洽 邮箱：business@iskating.cn</p>
+            <p className="service_content service_center">
+              <img alt="service_ZX" className="contentImg" src={serviceZX2} key="img7" />
+            </p>
+            <p className="service_content service_center">
+              <img alt="service_ZX" className="contentImg" src={serviceZX3} key="img8" />
             </p>
           </div>
         </div>

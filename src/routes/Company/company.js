@@ -46,7 +46,7 @@ export default class Company extends React.Component {
             <p className="company_content">庞清佟健冰上艺术中心目前拥有教练员均为前国家队队员，拥有全国最顶尖的教练员资源，并与国际组织合作聘请世界级顶尖选手担当技术总监，旨在打造中国顶级花样滑冰高端培训品牌，服务中国冰雪爱好者。</p>
             <p className="company_content">同时打造Magic On Ice演出团队，立志让中国新一代运动员在赛场下继续展现自己的价值，将花样滑冰与中国文化相结合，打造具有中国特色的冰上演出，让中国的花样演出从此自信，走出国门推广2022，宣扬中国文化。</p>
             <p className="company_content">此外，翼翔冰雪®在佟健先生的带领下用实际行动回馈大众，每月举办一次爱滑冰®公益课，现已成功举办36 场，而且积极响应国家号召推动冰雪进校园活动， 2016 年 11 月以独特的形式，携手清华附中打造国内首例大型校园冰上剧，用全新的推广方式在校园播下冰雪梦想，引领校园冰雪发展，把冰雪进校园推向新时代。</p>
-            <p className="company_content">联系电话：010-57189700<br />商务合作：business@iskating.cn<br />投稿邮箱：iskating@foxmail.com</p>
+            <p className="company_content">联系电话：(010)65721860<br />商务合作：business@iskating.cn<br />投稿邮箱：iskating@foxmail.com<br />公司地址：北京市朝阳区平房村70号院</p>
           </div>
         </div>
         <Footer id="footer_0_0" key="footer_0_0" isMode={this.state.isMode} />
