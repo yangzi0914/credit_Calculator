@@ -155,7 +155,7 @@ export default class Company extends React.Component {
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-1' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
             <h4 className="service_h4">关于爱滑冰新媒体</h4>
-            <p className="service_content">专业的花样滑冰新媒体平台，主要发布爱滑冰®的活动资讯，同时提供花滑近期资讯，行业动态，赛事信息，人物介绍，项目科普等内容。用美妙的软文承载更多爱滑冰的心。</p>
+            <p className="service_content">爱滑冰新媒体平台成立于2015年，至今已成为花样滑冰领域最权威的媒体平台，为行业提供最新、最专业的国内外冰讯，更是国内首家获得「ISU国际滑冰聯盟」认证之新媒体平台</p>
           </div>
           <div className={`service_main ${this.state.selectedKeys[0] === 'sub3-2' ? 'service_main_selected' : ''}`}>
             <h3 className="service_h3">新媒体</h3>
