@@ -49,9 +49,14 @@ class Footer extends React.Component {
                 <a href="http://weibo.com/p/1006065665302995/home?from=page_100606&mod=TAB#place" target="_blank"><img src={sina} /></a>
               </li>
             </ul>
-            <p key="p" id={`${props.id}-content`}>
-              电话(010)65721860<br />传真(010)65415821<br />business@iskating.cn<br />北京市朝阳区平房村70号院
+            <p key="p1" id={`${props.id}-content1`}>
+              电话(010)65721860
             </p>
+            <p key="p2" id={`${props.id}-content2`}>
+              传真(010)65415821
+            </p>
+            <p key="p3" id={`${props.id}-content3`}>business@iskating.cn</p>
+            <p key="p4" id={`${props.id}-content4`}>北京市朝阳区平房村70号院</p>
           </div>
           <p className="footer_p">© 爱滑冰</p>
         </QueueAnim>

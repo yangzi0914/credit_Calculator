@@ -29,6 +29,10 @@
   text-align: justify;
 }
 
+.company_content.short {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 767px) {
   .company_banner{
     height: 210px;
