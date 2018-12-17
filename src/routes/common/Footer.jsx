@@ -76,7 +76,8 @@ class Footer extends React.Component {
         >
           <h5 className="footer_h5">文化演出</h5>
           <div className="footer_div" style={{ opacity: '0.8', fontFamily: 'SourceHanSerifSC-Bold', padding: '30px 0' }}>
-            <p className="last_p">Magic on ice<br />Dream on ice </p>
+            <p className="last_p">Magic on ice</p>
+            <p className="last_p">Dream on ice</p>
           </div>
           <p className="footer_p">© Magic on ice 表演团</p>
         </QueueAnim>
