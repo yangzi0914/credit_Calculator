@@ -5,7 +5,8 @@ import './css/company.css';
 import Nav from './../common/Nav';
 import Footer from './../common/Footer';
 import Download from './../common/Download';
-import serviceZX3 from '../../assets/serviceZX3.jpg';
+// import serviceZX3 from '../../assets/serviceZX3.jpg';
+import bmap from '../../assets/map.html';
 
 export default class Company extends React.Component {
   constructor(props) {
@@ -43,7 +44,8 @@ export default class Company extends React.Component {
           <div className="company_main">
             <h2 className="company_title">公司简介</h2>
             <p className="service_content">
-              <img alt="companyImg" className="contentImg" src={serviceZX3} key="img1" />
+              {/* <img alt="companyImg" className="contentImg" src={serviceZX3} key="img1" /> */}
+              <iframe src={bmap} frameBorder="0" width="100%" height="300px" />
             </p>
             <p className="company_content">翼翔冰雪® 由花样滑冰世界冠军佟健先生于 2015 年创办，经过近 3年的发展，依托庞清佟健冰上艺术中心为基地，现已形成了由体育 + 教育、体育 + 文化+娱乐和爱滑冰®新媒体构成的全面的冰雪运动优质内容服务平台。</p>
             <p className="company_content">佟健与庞清从事花样滑冰已30余年，上百场国际赛事和20余年海外职业运动经历使他们两位成为行业的旗帜。佟健与庞清配合多次曾获世锦赛冠军与奥运会奖牌， 2014年索契冬奥会成为运动员精神领袖，担当中国冰雪军团开幕式旗手，代表运动员向总书记汇报并赠送冬奥代表团服装。</p>
