@@ -3726,7 +3726,7 @@ samp {
 #nav_0_0.white #nav_0_0-menu.ant-menu-horizontal > .ant-menu-item-selected a{ color: #075498;}
 #nav_0_0.white #nav_0_0-menu.ant-menu-horizontal > .ant-menu-item-selected { border-color: #075498;}
 #nav_0_0.rel { position: relative }
-#content_0_0:before { background-image: url(./static/banner.d0bccad5.png); position: relative }
+#content_0_0:before { background-image: url(./static/banner.938ba85a.png); position: relative }
 }
 @media screen and (max-width: 767px) {
 #nav_0_0-menu .header0-phone-nav-text { width: 50%; height: auto; top: 64px; right: 15px; padding-top: 0px; border-radius: 4px;}
@@ -4014,7 +4014,7 @@ h4 {
   border-color: #666;
 }
 .banner0:before {
-  background-image: url(./static/banner.d0bccad5.png);
+  background-image: url(./static/banner.938ba85a.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -4581,7 +4581,7 @@ h4 {
 }
 .company_banner{
   height: 480px;
-  background: url(./static/company_banner.41bae1cf.png) no-repeat;
+  background: url(./static/company_banner.812b582f.png) no-repeat;
   background-size: cover;
   background-position: left;
 }
