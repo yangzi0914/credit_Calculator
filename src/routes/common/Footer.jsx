@@ -5,9 +5,13 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import weChat from '../../assets/weChat.png';
 import app from '../../assets/app.png';
 import sina from '../../assets/sina.png';
-import weChat_QR from '../../assets/weChat_QR.png';
-import app_QR from '../../assets/app_QR.png';
-import logo_footer from '../../assets/logo_footer.png';
+import weChatQR from '../../assets/weChat_QR.png';
+import appQR from '../../assets/app_QR.png';
+import logoFooter1 from '../../assets/logo_footer1.png';
+import logoFooter2 from '../../assets/logo_footer2.png';
+import logoFooter3 from '../../assets/logo_footer3.png';
+import addFooter from '../../assets/add_footer.png';
+import telFooter from '../../assets/tel_footer.png';
 
 class Footer extends React.Component {
 
@@ -34,27 +38,16 @@ class Footer extends React.Component {
           ease={['easeOutCubic', 'easeInCubic']}
           id={`${props.id}-left`}
         >
-          <h5 className="footer_h5">联系我们</h5>
+          <h5 className="footer_h5">冰场运营</h5>
           <div className="footer_div">
-            <ul key="img" id={`${props.id}-img`} className="footer-ul">
-              <li>
-                <img src={weChat} />
-                <img src={weChat_QR} style={{ left: '-47px' }} />
-              </li>
-              <li>
-                <img src={app} />
-                <img src={app_QR} />
-              </li>
-              <li>
-                <a href="http://weibo.com/p/1006065665302995/home?from=page_100606&mod=TAB#place" target="_blank"><img src={sina} /></a>
-              </li>
-            </ul>
-            <p key="p1" id={`${props.id}-content1`}>电话(010)65721860</p>
+            <img src={logoFooter1} style={{ width: '91px' }} />
+          </div>
+            
+            {/* <p key="p1" id={`${props.id}-content1`}>电话(010)65721860</p>
             <p key="p2" id={`${props.id}-content2`}>传真(010)65415821</p>
             <p key="p3" id={`${props.id}-content3`}>business@iskating.cn</p>
-            <p key="p4" id={`${props.id}-content4`}>北京市朝阳区平房村70号院</p>
-          </div>
-          <p className="footer_p">© 爱滑冰</p>
+            <p key="p4" id={`${props.id}-content4`}>北京市朝阳区平房村70号院</p> */}
+          <p className="footer_p">© 翼翔冰雪</p>
         </QueueAnim>
         <QueueAnim
           className={`${props.className}-content`}
@@ -64,7 +57,7 @@ class Footer extends React.Component {
         >
           <h5 className="footer_h5">艺术培训</h5>
           <div className="footer_div">
-            <img src={logo_footer} style={{ width: '94px', verticalAlign: 'middle' }} />
+            <img src={logoFooter2} style={{ width: '88px' }} />
           </div>
           <p className="footer_p">© 庞清佟健冰上艺术中心</p>
         </QueueAnim>
@@ -75,13 +68,42 @@ class Footer extends React.Component {
           id={`${props.id}-right`}
         >
           <h5 className="footer_h5">文化演出</h5>
-          <div className="footer_div" style={{ opacity: '0.8', fontFamily: 'SourceHanSerifSC-Bold', padding: '30px 0' }}>
-            <p className="last_p">Magic on ice</p>
-            <p className="last_p">Dream on ice</p>
+          <div className="footer_div" style={{ opacity: '0.8', fontFamily: 'SourceHanSerifSC-Bold', padding: '34px 0' }}>
+            <p className="footer_div_text">Magic on ice</p>
+            <p className="footer_div_text">Dream on ice</p>
           </div>
           <p className="footer_p">© Magic on ice 表演团</p>
         </QueueAnim>
+        <QueueAnim
+          className={`${props.className}-content`}
+          key="footer-last"
+          ease={['easeOutCubic', 'easeInCubic']}
+          id={`${props.id}-last`}
+        >
+          <h5 className="footer_h5">数字媒体</h5>
+          <div className="footer_div">
+            <img src={logoFooter3} style={{ width: '148px' }} />
+          </div>
+          <p className="footer_p">© 爱滑冰</p>
+        </QueueAnim>
         <div key="clearfix" className="clearfix" />
+        <div className="line">
+          <ul key="img" id={`${props.id}-img`} className="footer-ul">
+            <li>
+              <img src={weChat} />
+              <img src={weChatQR} style={{ left: '-47px' }} />
+            </li>
+            <li>
+              <img src={app} />
+              <img src={appQR} />
+            </li>
+            <li>
+              <a href="http://weibo.com/p/1006065665302995/home?from=page_100606&mod=TAB#place" target="_blank"><img src={sina} /></a>
+            </li>
+          </ul>
+          <p className="iconFooter"><img src={telFooter} />010-65721860 18610660088</p>
+          <p className="iconFooter"><img src={addFooter} />北京市朝阳区平房村70号院</p>
+        </div>
         <TweenOne
           animation={{ y: '-=30', opacity: 0, type: 'from' }}
           component="p"
