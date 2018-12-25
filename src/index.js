@@ -1,7 +1,6 @@
 import dva from 'dva';
 // import createHistory from 'history/createBrowserHistory';
 import './index.css';
-import './favicon.ico';
 
 // 1. Initialize
 const app = dva({

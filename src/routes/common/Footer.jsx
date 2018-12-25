@@ -111,7 +111,7 @@ class Footer extends React.Component {
           reverseDelay={300}
           className={`${props.className}-text`}
         >
-          北京翼翔冰雪
+          翼翔冰雪
         </TweenOne>
       </OverPack>
     </div>
