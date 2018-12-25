@@ -10,6 +10,7 @@ import appQR from '../../assets/app_QR.png';
 import logoFooter1 from '../../assets/logo_footer1.png';
 import logoFooter2 from '../../assets/logo_footer2.png';
 import logoFooter3 from '../../assets/logo_footer3.png';
+import dreamonice from '../../assets/Dreamonice.png';
 import addFooter from '../../assets/add_footer.png';
 import telFooter from '../../assets/tel_footer.png';
 
@@ -40,7 +41,7 @@ class Footer extends React.Component {
         >
           <h5 className="footer_h5">冰场运营</h5>
           <div className="footer_div">
-            <img src={logoFooter1} style={{ width: '91px' }} />
+            <img src={logoFooter1} style={{ width: '60px' }} />
           </div>
             
             {/* <p key="p1" id={`${props.id}-content1`}>电话(010)65721860</p>
@@ -57,7 +58,7 @@ class Footer extends React.Component {
         >
           <h5 className="footer_h5">艺术培训</h5>
           <div className="footer_div">
-            <img src={logoFooter2} style={{ width: '88px' }} />
+            <img src={logoFooter2} style={{ width: '54px' }} />
           </div>
           <p className="footer_p">© 庞清佟健冰上艺术中心</p>
         </QueueAnim>
@@ -68,9 +69,8 @@ class Footer extends React.Component {
           id={`${props.id}-right`}
         >
           <h5 className="footer_h5">文化演出</h5>
-          <div className="footer_div" style={{ opacity: '0.8', fontFamily: 'SourceHanSerifSC-Bold', padding: '34px 0' }}>
-            <p className="footer_div_text">Magic on ice</p>
-            <p className="footer_div_text">Dream on ice</p>
+          <div className="footer_div">
+            <img src={dreamonice} style={{ width: '98px' }} />
           </div>
           <p className="footer_p">© Magic on ice 表演团</p>
         </QueueAnim>
@@ -82,7 +82,7 @@ class Footer extends React.Component {
         >
           <h5 className="footer_h5">数字媒体</h5>
           <div className="footer_div">
-            <img src={logoFooter3} style={{ width: '148px' }} />
+            <img src={logoFooter3} style={{ width: '110px' }} />
           </div>
           <p className="footer_p">© 爱滑冰</p>
         </QueueAnim>
