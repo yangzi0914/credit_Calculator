@@ -55,7 +55,7 @@ class Content extends React.Component {
             className={`${props.className}-main`}
           >
             <h3 key="h3"><span>PANGQING TONGJIAN Skating&Art Center </span><br/>庞清佟健冰上艺术中心</h3>
-            <p key="p1">庞清佟健冰上艺术中心旨在提供高端优质的花样滑冰课程培训，由国际顶级选手和国家队选手倾情打造体育加文化的冰上盛宴。每位学员均将得到国家级高水平教练的指导，同时提供陆地训练、舞蹈培训、体制测评等服务，满足学员的各方面需求。</p>
+            <p key="p1">庞清佟健冰上艺术中心旨在提供高端优质的花样滑冰课程培训，由国际顶级选手和前国家队选手倾情打造体育加文化的冰上盛宴。每位学员均将得到国家级高水平教练的指导，同时提供陆地训练、舞蹈培训、体制测评等服务，满足学员的各方面需求。</p>
             <p key="p2">展现行业DNA，为高端客群做好系统服务；与总局合作培训专业教练人才；研发统一教材、教学视频，建立标准化规模化培训模式。</p>
             <p key="p3"><Link to={{ pathname: '/service', state: {type: 'sub1'} }}>了解更多</Link></p>
             {isMode ? undefined : (<img key="img2" src={artCenter2} />)}
